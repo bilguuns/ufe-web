@@ -5,8 +5,11 @@ import Link from "next/link";
 
 import MoreButton from "../common/more-button";
 import AppHero from "../components/hero";
-import VideoApp from "../common/video-list";
+// import VideoApp from "../common/video-list";
 // import styles from "../styles/Home.module.css";
+import dynamic from "next/dynamic";
+
+const VideoApp = dynamic(() => import("../common/video-list"));
 
 export default function Home() {
   return (

@@ -172,6 +172,10 @@ const HeaderStyle = styled.div`
   .header .wrap .nav-button span.label--nav-open.active {
     color: #ffffff;
   }
+  .img {
+    float: left;
+  }
+
   button {
     border: none;
     margin: 0;
@@ -246,28 +250,34 @@ const NavigationMenu = (props: any) => {
 const Header = (props: any) => {
   const { navOpen, navIsAnimating, toggleNavHandler } = props;
   return (
-    <HeaderStyle>
-      <header className="header">
-        <Image width={155} height={48} alt="example" src={image} />
-        <div className="wrap">
-          <button
-            className={`nav-button${navIsAnimating ? " is-animating" : ""}`}
-            type="button"
-            aria-label="Toggle Navigation"
-            onClick={(event) => toggleNavHandler(event)}
-          >
-            <span
-              className={`btn label--nav-closed ${!navOpen ? " active" : ""}`}
+    <div className="container">
+      <HeaderStyle>
+        <header className="header">
+          <div className="img">
+            <Image width={155} height={48} alt="example" src={image} />
+          </div>
+          <div className="wrap">
+            <button
+              className={`nav-button${navIsAnimating ? " is-animating" : ""}`}
+              type="button"
+              aria-label="Toggle Navigation"
+              onClick={(event) => toggleNavHandler(event)}
             >
-              Цэс
-            </span>
-            <span className={`label--nav-open${navOpen ? " active" : ""}`}>
-              Хаах
-            </span>
-          </button>
-        </div>
-      </header>
-    </HeaderStyle>
+              <span
+                className={`btn btn-primary label--nav-closed ${
+                  !navOpen ? " active" : ""
+                }`}
+              >
+                Цэс
+              </span>
+              <span className={`label--nav-open${navOpen ? " active" : ""}`}>
+                Хаах
+              </span>
+            </button>
+          </div>
+        </header>
+      </HeaderStyle>
+    </div>
   );
 };
 

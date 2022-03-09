@@ -45,7 +45,7 @@ class VideoApp extends Component {
   render() {
     return (
       <div>
-        <VideoPlayer
+        {/* <VideoPlayer
           className="video-js-player"
           controls={true}
           height="400px"
@@ -58,7 +58,7 @@ class VideoApp extends Component {
           onSeeking={this.onVideoSeeking.bind(this)}
           onSeeked={this.onVideoSeeked.bind(this)}
           onEnd={this.onVideoEnd.bind(this)}
-        />
+        /> */}
       </div>
     );
   }

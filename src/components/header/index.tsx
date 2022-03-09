@@ -44,7 +44,6 @@ const HeaderStyle = styled.div`
   @media (max-width: 799px) {
     .navigation-menu .wrap {
       position: relative;
-      padding-bottom: 40vw;
     }
   }
   .navigation-menu .wrap .cols {
@@ -97,14 +96,15 @@ const HeaderStyle = styled.div`
     }
   }
   .navigation-menu .wrap .cols .col.col-links .links .link a:after {
-    position: absolute;
-    top: auto;
-    bottom: -2.5px;
+    position: fixed;
+    top: 0;
     left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
     transform: translateY(100%);
     content: "";
-    height: 2px;
-    width: 100%;
+
     background-color: #ffffff;
     border-radius: 4px;
     transform: scaleX(0);

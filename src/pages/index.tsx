@@ -14,7 +14,6 @@ const VideoApp = dynamic(() => import("../common/video-list"));
 export default function Home() {
   return (
     <div>
-      <h1>Homepage</h1>
       <VideoApp />
       <AppHero />
       <MoreButton />

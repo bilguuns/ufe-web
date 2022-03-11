@@ -45,10 +45,15 @@ class VideoApp extends Component {
   render() {
     return (
       <div>
+        <div
+          className="video-player"
+          style={{ width: `100%`, height: "auto", display: "flex" }}
+        ></div>
         {/* <VideoPlayer
           className="video-js-player"
           controls={true}
-          height="400px"
+          width="1110"
+          height="600"
           src={this.state.video.src}
           poster={this.state.video.poster}
           onReady={this.onPlayerReady.bind(this)}

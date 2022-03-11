@@ -44,6 +44,7 @@ const HeaderStyle = styled.div`
   @media (max-width: 799px) {
     .navigation-menu .wrap {
       position: relative;
+      padding-bottom: 40vw;
     }
   }
   .navigation-menu .wrap .cols {
@@ -122,7 +123,7 @@ const HeaderStyle = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: 40px;
     z-index: 6;
   }
   .header .wrap {

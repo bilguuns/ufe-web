@@ -1,24 +1,29 @@
+import Image from "next/image";
+import ufe_icon from "../../assets/images/Revolving-Building-Background .png";
+import styles from "../footer/style.module.css";
+import {
+  MDBCarousel,
+  MDBCarouselInner,
+  MDBCarouselItem,
+  MDBCarouselElement,
+  MDBCarouselCaption,
+} from "mdb-react-ui-kit";
+
 const AppHero = () => {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="ol-xs-7 col-sm-6 col-lg-8">
-          <div className="card">
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the cards content.
-              </p>
-              <a href="#" className="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6"></div>
-      </div>
-    </div>
+    <MDBCarouselInner>
+      <MDBCarouselItem className="active">
+        <MDBCarouselElement
+          src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).webp"
+          alt="..."
+        />
+        <MDBCarouselCaption>
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </MDBCarouselCaption>
+      </MDBCarouselItem>
+    </MDBCarouselInner>
+    // <div className="has-bg-img">{/* <Image src={ufe_icon} /> */}</div>
   );
 };
 

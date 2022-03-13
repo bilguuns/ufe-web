@@ -55,44 +55,18 @@ section {
   }
 }
 
-.team .member {
-  text-align: center;
+.card_list .card {
   margin-bottom: 20px;
-  padding: 30px 20px;
   background: #F2F2F5;
 }
-.team .member .img {
-  max-width: 100%;
-  margin: 0 0 30px 0;
-}
-.team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-}
-.team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-.team .member p {
+
+.card_list .card p {
   padding-top: 10px;
   font-size: 14px;
-  font-style: italic;
-  color: #aaaaaa;
+  font-style: Montserrat;
 }
-.team .member .social {
-  margin-top: 15px;
+.card_list .card_content{
+    padding:20px;
 }
-.team .member .social a {
-  color: #919191;
-  transition: 0.3s;
-}
-.team .member .social a:hover {
-  color: #16df7e;
-}
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
+
 `;

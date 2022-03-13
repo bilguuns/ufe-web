@@ -10,17 +10,21 @@ import styles from "../styles/Home.module.css";
 import dynamic from "next/dynamic";
 import Card from "../common/card";
 import PodcastCard from "../components/podcast";
+import AppNews from "../common/industry-news";
 
 const VideoApp = dynamic(() => import("../common/video-list"));
 
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>Home</title>
+      </Head>
       <AppHero />
       <VideoApp />
-
       <Card />
       <PodcastCard />
+      <AppNews />
 
       {/* 
       <Link href="/ninjas/">

@@ -9,20 +9,25 @@ const PodcastCard = () => {
         <div className="container">
           <h1>UFE Poolcast</h1>
           <div className="row">
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div className="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
               <div className="icon-box">
-                <Image width={350} height={452} alt="example" src={podcast} />
+                <Image alt="example" src={podcast} />
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div className="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
               <div className="icon-box">
-                <Image width={350} height={452} alt="example" src={podcast} />
+                <Image alt="example" src={podcast} />
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div className="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
               <div className="icon-box">
-                <Image width={350} height={452} alt="example" src={podcast} />
+                <Image alt="example" src={podcast} />
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+              <div className="icon-box">
+                <Image alt="example" src={podcast} />
               </div>
             </div>
           </div>

@@ -14,12 +14,15 @@ const AppHero = () => {
     <MDBCarouselInner>
       <MDBCarouselItem className="active">
         <MDBCarouselElement
-          src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).webp"
+          src="https://i.ibb.co/bW7TXc3/Revolving-Building-Background-1-1.png"
           alt="..."
         />
         <MDBCarouselCaption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h5>Эрхэм баян Эрдэм</h5>
+          <p>
+            A subititle for your landing page describing your product or service
+            that you provide..
+          </p>
         </MDBCarouselCaption>
       </MDBCarouselItem>
     </MDBCarouselInner>

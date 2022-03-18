@@ -54,6 +54,16 @@ section {
     font-size: 38px;
   }
 }
+a{color:#212529;
+text-decoration:none;
+padding-right:10px;
+}
+.navbar-nav{
+    flex-direction:initial;
+}
+a.ex1:hover, a.ex1:active { text-decoration: underline;
+}
+
 
 
 `;

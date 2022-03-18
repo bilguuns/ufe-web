@@ -187,6 +187,15 @@ const HeaderStyle = styled.div`
     color: inherit;
     font: inherit;
     line-height: normal;
+    .header_btn {
+      background-color: #0132a6;
+      border: none;
+      color: white;
+      padding: 10px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
   }
 `;
 const ESC_KEY_CODE = "Escape";
@@ -214,33 +223,31 @@ const NavigationMenu = (props: any) => {
           <div className="cols">
             <div className="col col-left col-links">
               <ul className="links">
-                <Link href="/">
-                  <li className="link">
+                <li className="link">
+                  <Link href="/">
                     <a>Сургалт</a>
-                  </li>
-                </Link>
-                <Link href="/about">
-                  <li className="link">
+                  </Link>
+                </li>
+                <li className="link">
+                  <Link href="/about">
                     <a>Судалгаа</a>
-                  </li>
-                </Link>
-                <Link href="/about">
-                  <li className="link">
+                  </Link>
+                </li>
+                <li className="link">
+                  <Link href="/education">
                     <a>Оюутны амьдрал</a>
-                  </li>
-                </Link>
-                <Link href="/about">
-                  <li className="link">
+                  </Link>
+                </li>
+                <li className="link">
+                  <Link href="/about">
                     <a>Бидний тухай</a>
-                  </li>
-                </Link>
+                  </Link>
+                </li>
               </ul>
             </div>
             {/* <div className="col col-right col-image">
-            <img
-              className="astro"
-              src="https://i.imgur.com/0pWqp5j.png" />
-          </div> */}
+              <img className="astro" src="https://i.imgur.com/0pWqp5j.png" />
+            </div> */}
           </div>
         </div>
       </div>
@@ -254,9 +261,11 @@ const Header = (props: any) => {
     <div className="container">
       <HeaderStyle>
         <header className="header">
-          <div className="img">
-            <Image width={155} height={48} alt="example" src={image} />
-          </div>
+          <Link href="/">
+            <div className="img">
+              <Image width={155} height={48} alt="example" src={image} />
+            </div>
+          </Link>
           <div className="wrap">
             <button
               className={`nav-button${navIsAnimating ? " is-animating" : ""}`}
@@ -265,7 +274,7 @@ const Header = (props: any) => {
               onClick={(event) => toggleNavHandler(event)}
             >
               <span
-                className={`btn btn-primary label--nav-closed ${
+                className={`header_btn label--nav-closed ${
                   !navOpen ? " active" : ""
                 }`}
               >

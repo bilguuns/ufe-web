@@ -2,12 +2,13 @@ import React from "react";
 import { NewsCardStyle } from "./style";
 import NewsCardImage from "../../assets/images/news-card.png";
 import Image from "next/image";
+import CardButton from "../../common/card-button";
 
 export default function AppNews() {
   return (
     <NewsCardStyle>
       <section id="news_list" className="news_list section-bg">
-        <div className="container">
+        <div className="header-container container">
           <h1>UFE салбарын мэдээ</h1>
           <div className="row g-5">
             <div className="col-lg-5">
@@ -15,7 +16,7 @@ export default function AppNews() {
                 <Image src={NewsCardImage} alt="" layout="responsive" />
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-5">
               <div className="news-description">
                 <h3 className="pt-0 pt-lg-4">
                   “UFE NETWORKING 2021” амжилттай зохион байгуулагдаж өнгөрлөө.
@@ -27,6 +28,7 @@ export default function AppNews() {
                   оюутнуудын хамтаар амжилттай зохион байгуулагдлаа.
                 </p>
               </div>
+              <CardButton />
             </div>
           </div>
         </div>

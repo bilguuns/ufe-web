@@ -4,8 +4,20 @@ export const FooterStyle = styled.div`
 ul {
     list-style: none;
     padding-left: 0px;
-    margin-bottom: 0;
-    text-align:left;
+    color:#C7C9D9;
+    // margin-bottom: 0;
+    // text-align:left;
+}
+.m{
+    margin-top:30px;
+
+}
+.m1{
+    margin-top:60px;
+}
+.m2{
+        margin-top:60px;
+
 }
 footer{
     position: relative;
@@ -19,11 +31,14 @@ footer{
     color: #fff;
 }
 .footer-content{
+
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    flex-wrap:wrap;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+    // text-align: center;
 }
 .footer-content h3{
     font-size: 2.1rem;
@@ -33,7 +48,6 @@ footer{
 }
 .footer-content p{
     max-width: 500px;
-    margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
     color: #cacdd2;
@@ -44,8 +58,14 @@ footer{
     text-align:left;
 }
 .img{
-    float:left;
+   
 }
+
+.icon{
+    display: inline-block;
+    margin-right : 10px
+}
+
 
 
 `;

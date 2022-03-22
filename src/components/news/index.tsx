@@ -1,11 +1,7 @@
 import React from "react";
 import { NewsStyle } from "./style";
-import NewsCardImage from "../../assets/images/news.png";
-import NewsCardSmallImage from "../../assets/images/news-small-card.png";
 
-import Image from "next/image";
-import CardButton from "../../common/card-button";
-import MoreButton from "../../common/more-button";
+import MoreButton from "../common/more-button";
 import { AppNewsSmall } from "./news-small";
 import { AppNewsBig } from "./news";
 

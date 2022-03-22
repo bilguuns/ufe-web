@@ -1,71 +1,36 @@
-import React, { Component } from "react";
-import VideoPlayer from "react-video-js-player";
+import React from "react";
+import { Player } from "video-react";
+import "video-react/dist/video-react.css";
+import MoreButton from "../common/more-button";
+import Image from "next/image";
+import poster from "../../assets/images/video-image.png";
+import { VideoStyle } from "./style";
 
-class VideoApp extends Component {
-  constructor(props: any) {
-    super(props);
-  }
-  player = {};
-  state = {
-    video: {
-      src: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
-      poster: "http://www.example.com/path/to/video_poster.jpg",
-    },
-  };
-
-  onPlayerReady(player: any) {
-    console.log("Player is ready: ", player);
-    this.player = player;
-  }
-
-  onVideoPlay(duration: any) {
-    console.log("Video played at: ", duration);
-  }
-
-  onVideoPause(duration: any) {
-    console.log("Video paused at: ", duration);
-  }
-
-  onVideoTimeUpdate(duration: any) {
-    console.log("Time updated: ", duration);
-  }
-
-  onVideoSeeking(duration: any) {
-    console.log("Video seeking: ", duration);
-  }
-
-  onVideoSeeked(from: any, to: any) {
-    console.log(`Video seeked from ${from} to ${to}`);
-  }
-
-  onVideoEnd() {
-    console.log("Video ended");
-  }
-
-  render() {
-    return (
-      <div>
-        <div
-          className="video-player"
-          style={{ width: `100%`, height: "auto", display: "flex" }}
-        ></div>
-        {/* <VideoPlayer
-          className="video-js-player"
-          controls={true}
-          width="1110"
-          height="600"
-          src={this.state.video.src}
-          poster={this.state.video.poster}
-          onReady={this.onPlayerReady.bind(this)}
-          onPlay={this.onVideoPlay.bind(this)}
-          onPause={this.onVideoPause.bind(this)}
-          onTimeUpdate={this.onVideoTimeUpdate.bind(this)}
-          onSeeking={this.onVideoSeeking.bind(this)}
-          onSeeked={this.onVideoSeeked.bind(this)}
-          onEnd={this.onVideoEnd.bind(this)}
-        /> */}
+const AppVideo = () => (
+  <VideoStyle>
+    <section id="video_list" className="video_list section">
+      <div className="header-container container">
+        <div className="row">
+          <div className="col-lg">
+            <h1>UFE видео</h1>
+          </div>
+          <div className="col-lg">
+            <div className="more-button">
+              <MoreButton />
+            </div>
+          </div>
+        </div>
       </div>
-    );
-  }
-}
-export default VideoApp;
+      <div className="container">
+        <Player>
+          <source
+            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+            type="video/mp4"
+          />
+        </Player>
+      </div>
+    </section>
+  </VideoStyle>
+);
+
+export default AppVideo;

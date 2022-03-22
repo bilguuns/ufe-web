@@ -16,13 +16,16 @@
     "mdb-react-ui-kit": "^2.4.0",
     "next": "12.1.0",
     "next-auth-client": "^1.5.0",
-    "react": "17.0.2",
+    "react": "^17.0.2",
     "react-bootstrap-icons": "^1.7.2",
     "react-calendar": "^3.7.0",
-    "react-dom": "17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hero-carousel": "^1.2.1",
     "react-icons": "^4.3.1",
-    "react-video-js-player": "^1.1.1",
-    "styled-components": "^5.3.3"
+    "react-player": "^2.10.0",
+    "react-simple-image-slider": "^2.4.1",
+    "styled-components": "^5.3.3",
+    "video-react": "^0.15.0"
   },
   "devDependencies": {
     "@types/node": "17.0.21",

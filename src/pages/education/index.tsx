@@ -4,26 +4,20 @@ import { BsChevronRight } from "react-icons/bs";
 
 import Link from "next/link";
 import items from "../../../data";
-const myLoader = ({ src, width, quality }: any) => {
-  return `https://i.ibb.co/bW7TXc3/Revolving-Building-Background-1-1.png/${src}?w=${width}&q=${
-    quality || 100
-  }`;
-};
+
+import image from "../../assets/images/education.png";
+import Slider from "../../components/common/slider";
+
 const menuData = JSON.stringify(items);
 const Education = () => {
   return (
     <div>
       <EducationStyle>
-        <div>
-          <Image
-            loader={myLoader}
-            src="i.png"
-            alt=" Some quick example "
-            layout="responsive"
-            width="100%"
-            height="100"
-            objectFit="cover"
-          />
+        <div className="image">
+          <Image src={image} alt="" layout="responsive" />
+          <div className="hero-text">
+            <h1>Эрдмийн зөвлөл</h1>
+          </div>
         </div>
 
         <section id="card_list" className="card_list section">
@@ -63,6 +57,9 @@ const Education = () => {
             </div>
           </div>
           <hr></hr>
+          <div className="container">
+            <Slider />
+          </div>
         </section>
       </EducationStyle>
     </div>

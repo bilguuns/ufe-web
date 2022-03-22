@@ -2,7 +2,7 @@ import React from "react";
 import { NewsCardStyle } from "./style";
 import NewsCardImage from "../../assets/images/news-card.png";
 import Image from "next/image";
-import CardButton from "../../common/card-button";
+import CardButton from "../common/card-button";
 
 export default function AppNews() {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import podcast from "../../assets/images/podcast.png";
-import MoreButton from "../../common/more-button";
+import MoreButton from "../common/more-button";
 import { PodcastCardStyle } from "./style";
 
 const PodcastCard = () => {

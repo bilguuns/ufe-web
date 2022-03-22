@@ -63,7 +63,20 @@ padding-right:10px;
 }
 a.ex1:hover, a.ex1:active { text-decoration: underline;
 }
+.hero-text {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+h1{
 
+  font-size:60px;
+}
+p{
+  font-size:20px;
+}
 
 
 `;

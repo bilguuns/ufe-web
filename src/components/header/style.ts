@@ -150,7 +150,6 @@ export const HeaderStyle = styled.div`
     opacity: 0;
   }
   .header .wrap .nav-button span {
-    position: absolute;
     top: 0;
     left: auto;
     right: 0;
@@ -158,8 +157,9 @@ export const HeaderStyle = styled.div`
     transform: translateY(-50%);
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    border-radius: 8px;
+    // text-transform: uppercase;
+    // letter-spacing: 0.1em;
   }
   .header .wrap .nav-button span.active {
     transform: translateY(0%);
@@ -186,13 +186,32 @@ export const HeaderStyle = styled.div`
       background-color: #0132a6;
       border: none;
       color: white;
-      padding: 10px 30px;
+      padding: 5px 30px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
     }
+       .header_btn1 {
+      background-color: #0132a6;
+      border: none;
+      color: white;
+      padding: 5px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin-right:30px;
+      margin-top:13px;
+
+
+    }
   li {
       list-style:  none none;
 }
+.menu{
 
+  margin-bottom:2px;
+  margin-right:5px;
+
+}
+  
 `;

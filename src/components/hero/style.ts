@@ -13,8 +13,7 @@ export const HeroStyle = styled.div`
 .hero-text {
   position: absolute;
   top: 30%;
-  left: 25%;
-  transform: translate(-50%, -50%);
+  left: 10%;
   color: white;
 }
 h1{

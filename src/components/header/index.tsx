@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import image from "../../assets/images/ufe.png";
 import background from "../../assets/images/Revolving-Building-Background .png";
-import { BsList } from "react-icons/bs";
+import { BsList, BsSearch } from "react-icons/bs";
 import { HeaderStyle } from "./style";
 const ESC_KEY_CODE = "Escape";
 
@@ -64,7 +64,6 @@ const NavigationMenu = (props: any) => {
                 </li>
               </ul>
               <hr />
-              fdfd
             </div>
             {/* <div className="col col-right col-image">
               <Image
@@ -92,6 +91,15 @@ const Header = (props: any) => {
               <Image width={155} height={48} alt="example" src={image} />
             </div>
           </Link>
+          {/* <button className="nav-button1">
+            <span className="header_btn1">
+              <BsSearch
+                className="menu"
+                style={{ color: "#fff", fontSize: "30px" }}
+              />
+              Хайлт
+            </span>
+          </button> */}
           <div className="wrap">
             <button
               className={`nav-button${navIsAnimating ? " is-animating" : ""}`}
@@ -104,14 +112,11 @@ const Header = (props: any) => {
                   !navOpen ? " active" : ""
                 }`}
               >
-                <div className="container">
-                  <div className="row">
-                    <div className="col">
-                      <BsList />
-                    </div>
-                    <div className="col">Цэс</div>
-                  </div>
-                </div>
+                <BsList
+                  className="menu"
+                  style={{ color: "#fff", fontSize: "30px" }}
+                />
+                Цэс
               </span>
               <span className={`label--nav-open${navOpen ? " active" : ""}`}>
                 Хаах

@@ -7,7 +7,7 @@ const MenuDetail = ({ props, data, id, slug }: any) => {
 
   console.log("----------------------------------------------------");
   const menuData = JSON.stringify(data);
-  console.log(menuData);
+  console.log(data);
 
   return (
     <div>

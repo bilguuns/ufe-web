@@ -19,7 +19,7 @@ const About = ({ data }: any) => {
   );
 };
 export async function getServerSideProps({ query }: any) {
-  const res = await fetch("https://127.0.0.1:8000/_api/menu");
+  const res = await fetch("http://127.0.0.1:8000/_api/menu");
   const data = await res.json();
 
   return {
@@ -28,3 +28,8 @@ export async function getServerSideProps({ query }: any) {
 }
 
 export default About;
+
+// TODO: any төрөл ашиглаж болохгүй.
+// TODO: API дуудаж байгаа сервисээ өөр фолдерт хийнэ.
+// TODO: Menu item - аа тусд component болгож гаргах
+// TODO: axios http client library суулгах

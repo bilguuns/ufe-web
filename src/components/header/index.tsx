@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 import Image from "next/image";
-import image from "../../assets/images/ufe.png";
+import image from "assets/images/ufe.png";
 import background from "../../assets/images/Revolving-Building-Background .png";
 import { BsList, BsSearch } from "react-icons/bs";
 import { HeaderStyle } from "./style";

@@ -21,6 +21,7 @@ const Education = () => {
     fetchDatas();
   }, []);
 
+  console.log(data);
   return (
     <>
       {data?.map((element: any, index: any) => (

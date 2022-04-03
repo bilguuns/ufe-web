@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Footer from "../components/footer";
-import Header from "../components/header";
+import Header from "../components/headerold";
 import Link from "next/link";
 
 import MoreButton from "../components/common/more-button";

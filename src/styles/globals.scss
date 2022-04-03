@@ -1,0 +1,30 @@
+$theme-colors: (
+        'primary': #0132A6,
+        'secondary': #833bec,
+        'success': #1ce1ac,
+        'info': #ff7d50,
+        'warning': #ffbe0b,
+        'danger': #ff007f,
+        'light': #c0ccda,
+        'dark': #001738,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  background-color: #efefef;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+

@@ -28,6 +28,7 @@
     "react-simple-image-slider": "^2.4.1",
     "styled-components": "^5.3.3",
     "swr": "^1.2.2",
+    "swr-fetcher": "^0.0.2",
     "video-react": "^0.15.0"
   },
   "devDependencies": {

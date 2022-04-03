@@ -1,35 +1,44 @@
-import axios from "axios";
-import useSWR from "swr";
-// import Image from "next/image";
-import IntroDataService from "pages/api/intro/service/intro.service";
-export default function Users() {
-  const address = `https://api.ufe.edu.mn/_api/menu`;
-  const fetcher = async (url: any) =>
-    await axios.get(url).then((res) => res.data);
-  const { data, error } = useSWR(address, fetcher);
+import { GetServerSideProps } from "next";
+import { createContext, useState } from "react";
 
-  if (error) <p>Loading failed...</p>;
-  if (!data) <h1>Loading...</h1>;
-  console.log(data);
+import AppCard from "components/common/card";
+import { IntroSWR } from "lib/api/intro";
+import { CardStyle } from "components/common/card/style";
+const Intro = ({ image }: any) => {
+  const { data: introData, error: introDataError } = IntroSWR();
+
+  console.log(introData);
+  console.log(image);
+
   return (
-    <div>
-      <div className="container">
-        {/* {data &&
-          data.map((item: any) => (
-            <div key={item.cell} className={`user-card  ${item.gender}`}>
-              <div>
-                <h3>{`${item.name.first}  ${item.name.last}`}</h3>
-              </div>
-              <div className="details">
-                <p>Country: {item.location.country}</p>
-                <p>State: {item.location.state}</p>
-                <p>Email: {item.email}</p>
-                <p>Phone: {item.phone}</p>
-                <p>Age: {item.dob.age}</p>
-              </div>
+    <CardStyle>
+      <section id="card_list" className="card_list section-bg">
+        <div className="header-container container">
+          <div className="row">
+            <div className="col-lg">
+              <h1>UFE хуанли 2022</h1>
             </div>
-          ))} */}
-      </div>
-    </div>
+            <div className="col-lg"></div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            {introData?.map(
+              (item: any, index: any) =>
+                item.introType == "Calendar" &&
+                item.translates.map((index: any) => (
+                  <AppCard
+                    key={index.id}
+                    shortName={index.shortName}
+                    name={index.name}
+                    // imagePath={index.filePath}
+                  ></AppCard>
+                ))
+            )}
+          </div>
+        </div>
+      </section>
+    </CardStyle>
   );
-}
+};
+export default Intro;

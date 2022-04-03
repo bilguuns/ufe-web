@@ -1,36 +1,36 @@
-import { useState, useEffect } from "react";
-import axios from "config/axios";
+// import { useState, useEffect } from "react";
+// import axios from "config/axios";
 
-import educationService from "pages/api/education/service/education.service";
+// // import educationService from "pages/api/education/service/education.service";
 
-const Education = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
+// const Education = () => {
+//   const [data, setData] = useState([]);
+//   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true);
+//   useEffect(() => {
+//     setLoading(true);
 
-    const fetchDatas = async () => {
-      const response: any = await educationService.getAll();
+//     const fetchDatas = async () => {
+//       const response: any = await educationService.getAll();
 
-      setData(response?.data?.menus);
+//       setData(response?.data?.menus);
 
-      setLoading(false);
-    };
+//       setLoading(false);
+//     };
 
-    fetchDatas();
-  }, []);
+//     fetchDatas();
+//   }, []);
 
-  console.log(data);
-  return (
-    <>
-      {data?.map((element: any, index: any) => (
-        <div key={index} className="asdasdasddasd">
-          {element.id} {element.contentType}
-        </div>
-      ))}
-    </>
-  );
-};
+//   console.log(data);
+//   return (
+//     <>
+//       {data?.map((element: any, index: any) => (
+//         <div key={index} className="asdasdasddasd">
+//           {element.id} {element.contentType}
+//         </div>
+//       ))}
+//     </>
+//   );
+// };
 
-export default Education;
+// export default Education;

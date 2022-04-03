@@ -13,6 +13,7 @@ import PodcastCard from "../components/podcast";
 import AppNews from "../components/industry-news";
 import News from "../components/news";
 import VideoApp from "../components/video-list";
+import CardList from "components/common/card-list";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
       <AppHero />
 
       <VideoApp />
-      <Card />
+      <CardList />
       <PodcastCard />
       <AppNews />
 

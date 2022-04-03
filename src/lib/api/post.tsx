@@ -1,19 +1,19 @@
 import useSWR from "swr";
 import axios from "config/axios";
 
-const urlPrefix = "/menu";
+const urlPrefix = "/post";
 export const listUrl = `${urlPrefix}`;
 
-export const MenuSWR = () => {
+export const PostSWR = () => {
   const fetcher = async (url: any) =>
     await axios.get(url).then((res: any) => {
       console.log(res);
-      return res.data.menus;
+      return res.data.posts;
     });
   return useSWR(listUrl, fetcher);
 };
 
-export const MenuAPI = {
+export const PostAPI = {
   list: async (values: any) => {
     const { data, status } = await axios.post(listUrl, values);
     if (status != 200) {

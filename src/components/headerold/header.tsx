@@ -31,11 +31,11 @@ const Header = (props: any) => {
                             aria-label="Toggle Navigation"
                             onClick={(event) => toggleNavHandler(event)}
                         >
-              <span
-                  className={`header_btn label--nav-closed ${
-                      !navOpen ? " active" : ""
-                  }`}
-              >
+                          <span
+                              className={`header_btn label--nav-closed ${
+                                  !navOpen ? " active" : ""
+                              }`}
+                          >
                 <BsList
                     className="menu"
                     style={{color: "#fff", fontSize: "30px"}}
@@ -43,8 +43,8 @@ const Header = (props: any) => {
                 Цэс
               </span>
                             <span className={`label--nav-open${navOpen ? " active" : ""}`}>
-                Хаах
-              </span>
+                            Хаах
+                          </span>
                         </button>
                     </div>
                 </header>

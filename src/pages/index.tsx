@@ -24,12 +24,10 @@ export default function Home() {
         <meta charSet="utf-8" />
       </Head>
       <AppHero />
-
       <VideoApp />
       <CardList />
       <PodcastCard />
       <AppNews />
-
       <News />
     </div>
   );

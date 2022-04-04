@@ -4,6 +4,7 @@ import Link from "next/link";
 import {MenuSWR} from "../../../lib/api/menu";
 import styles from "./main-nav.module.scss";
 
+
 const ESC_KEY_CODE = "Escape";
 
 const MainNav = ({navOpen, setNavOpen, navIsAnimating, closeNav}: any) => {
@@ -114,43 +115,89 @@ const MainNav = ({navOpen, setNavOpen, navIsAnimating, closeNav}: any) => {
 
     return (
         <div className={styles.nav_container}>
-
-
             <div className={"row"}>
                 {
                     menuStack?.map((stack: any, i1: number) => {
                         return (
-                            <div key={i1} className={"col-md-3"}>
-                                <ul>
-                                    {
-                                        stack.menuItems.map((menuItem: any, i2: number) => {
-                                            return (
-                                                <>
-                                                    {
-                                                        <li key={i2} className="link">
-                                                            <Link
-                                                                href={menuItem.hasChild ? '#' : `/c/${menuItem.menu.id}/${menuItem.menu.translates[0].name}`}
-                                                            >
-                                                                <a
-                                                                    onClick={(evt: any) => {
-                                                                        if (menuItem.hasChild) {
-                                                                            evt.preventDefault();
-                                                                            mainMenuClick(menuItem);
-                                                                        } else {
-                                                                            setNavOpen(false);
-                                                                        }
-                                                                    }}
-                                                                >{menuItem.menu.translates[0].name}</a>
-                                                            </Link>
-                                                        </li>
-                                                    }
-                                                </>
+                            <>
+                                {
+                                    i1 === 0 ?
+                                        <div key={i1} className={"col-md-4"}>
+                                            <ul className="list-group px-5" style={{borderRight: '5px solid #FFFFFF'}}>
+                                                {
+                                                    stack.menuItems.map((menuItem: any, i2: number) => {
+                                                        return (
+                                                            <>
+                                                                {
+                                                                    <li key={i2} className="link list-group-item"
+                                                                        style={{
+                                                                            backgroundColor: 'transparent',
+                                                                            color: '#FFFFFF'
+                                                                        }}>
+                                                                        <Link
+                                                                            href={menuItem.hasChild ? '#' : `/c/${menuItem.menu.id}/${menuItem.menu.translates[0].name}`}
+                                                                        >
+                                                                            <a
+                                                                                onClick={(evt: any) => {
+                                                                                    if (menuItem.hasChild) {
+                                                                                        evt.preventDefault();
+                                                                                        mainMenuClick(menuItem);
+                                                                                    } else {
+                                                                                        setNavOpen(false);
+                                                                                    }
+                                                                                }}
+                                                                            ><h1>{menuItem.menu.translates[0].name}</h1></a>
+                                                                        </Link>
+                                                                    </li>
+                                                                }
+                                                            </>
 
-                                            );
-                                        })
-                                    }
-                                </ul>
-                            </div>
+                                                        );
+                                                    })
+                                                }
+                                            </ul>
+                                        </div>
+                                        :
+                                        <div key={i1} className={"col-md-3"}>
+                                            <ul className="list-group px-5">
+                                                {
+                                                    stack.menuItems.map((menuItem: any, i2: number) => {
+                                                        return (
+                                                            <>
+                                                                {
+                                                                    <li key={i2} className="link list-group-item"
+                                                                        style={{
+                                                                            backgroundColor: 'transparent',
+                                                                            color: '#FFFFFF'
+                                                                        }}>
+                                                                        <Link
+                                                                            href={menuItem.hasChild ? '#' : `/c/${menuItem.menu.id}/${menuItem.menu.translates[0].name}`}
+                                                                        >
+                                                                            <a
+                                                                                onClick={(evt: any) => {
+                                                                                    if (menuItem.hasChild) {
+                                                                                        evt.preventDefault();
+                                                                                        mainMenuClick(menuItem);
+                                                                                    } else {
+                                                                                        setNavOpen(false);
+                                                                                    }
+                                                                                }}
+                                                                            ><h5 className="d-flex">{menuItem.menu.translates[0].name}{menuItem.hasChild ? <div className="ms-2">&gt;</div>: <></>}</h5></a>
+                                                                        </Link>
+                                                                    </li>
+                                                                }
+                                                            </>
+
+                                                        );
+                                                    })
+                                                }
+                                            </ul>
+                                        </div>
+
+                                }
+                            </>
+
+
                         );
                     })
                 }

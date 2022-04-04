@@ -1,26 +1,31 @@
 import {useRouter} from "next/router";
-import {json} from "stream/consumers";
 import image from "assets/images/education.png";
 import PageHeader from "components/layout/page/page-header";
 import Module from "components/module/index";
-import axios from "config/axios";
+import BachelorCard from "../../../../components/common/card/bachelorCard";
 
 
 const MenuDetail = ({props, id, slug, module, pageData}: any) => {
+
     const {query} = useRouter();
-    console.log(query);
+    console.log(pageData);
+
 
     return (
         <>
             <PageHeader image={image} title={slug}/>
-
-
             {
-                pageData.menu.contentType === "intro" &&
-                JSON.stringify(pageData)
+                pageData.menu.contentType === "intro" ?
+                    <div className="container my-5">
+                        <BachelorCard />
+                    </div>
+                    :
+                    <div className="container  my-5">
+                        <BachelorCard />
+                    </div>
+
+
             }
-
-
             {
                 pageData.menu.contentType === "module" &&
                 <Module
@@ -42,12 +47,8 @@ export async function getServerSideProps({query}: any) {
     const module = query.module ? query.module : '';
 
     // const result = await axios.get(`/menu/${id}/detail`);
-
-    const res = await fetch(`http://ufeweb.local/_api/menu/${id}/detail`);
+    const res = await fetch(`https://api.ufe.edu.mn/_api/menu/${id}/detail`);
     const pageData = await res.json();
-
-    console.log(pageData);
-
 
     // Pass data to the page via props
     return {props: {id, slug, module, pageData}};

@@ -3,7 +3,6 @@ import DepartmentModule from "./department";
 
 const Module = ({moduleName}: any) => {
 
-
     if (moduleName === "department") {
         return (
             <>
@@ -11,7 +10,6 @@ const Module = ({moduleName}: any) => {
             </>
         );
     }
-
     if (moduleName === "employee") {
         return (
             <>
@@ -19,7 +17,6 @@ const Module = ({moduleName}: any) => {
             </>
         );
     }
-
     return (
         <>
             <h4>404</h4>

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Footer from "../components/footer";
-import Header from "../components/headerold";
+// import Header from "../components/headerold";
 import Link from "next/link";
 
 import MoreButton from "../components/common/more-button";
@@ -10,7 +10,7 @@ import styles from "../styles/Home.module.css";
 import dynamic from "next/dynamic";
 import Card from "../components/common/card";
 import PodcastCard from "../components/podcast";
-import AppNews from "../components/industry-news";
+// import AppNews from "../components/industry-news";
 import News from "../components/news";
 import VideoApp from "../components/video-list";
 import CardList from "components/common/card-list";
@@ -27,7 +27,7 @@ export default function Home() {
       <VideoApp />
       <CardList />
       <PodcastCard />
-      <AppNews />
+      {/* <AppNews /> */}
       <News />
     </div>
   );

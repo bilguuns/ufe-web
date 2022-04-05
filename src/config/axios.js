@@ -3,7 +3,7 @@ import axios from "axios";
 import catchAxiosError from "./catch-axios-error";
 
 const fetcher = axios.create({
-  baseURL: "http://ufeweb.local/_api",
+  baseURL: "https://api.ufe.edu.mn/_api",
   headers: {
     Accept: "application/json",
     "Content-type": "application/json",

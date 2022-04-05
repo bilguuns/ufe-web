@@ -11,7 +11,7 @@ import dynamic from "next/dynamic";
 import Card from "../components/common/card";
 import PodcastCard from "../components/podcast";
 // import AppNews from "../components/industry-news";
-import News from "../components/news";
+import News from "../components/common/news";
 import VideoApp from "../components/video-list";
 import CardList from "components/common/card-list";
 

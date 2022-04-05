@@ -1,7 +1,7 @@
 import React from "react";
 import { NewsStyle } from "./style";
 
-import MoreButton from "../common/more-button";
+import MoreButton from "../more-button";
 import { AppNewsSmall } from "./news-small";
 import { AppNewsBig } from "./news";
 

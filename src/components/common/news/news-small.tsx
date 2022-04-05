@@ -1,7 +1,6 @@
 import React from "react";
-import NewsSmallImage from "../../../assets/images/news.png";
 import Image from "next/image";
-import NewsCardSmallImage from "../../assets/images/news-small-card.png";
+import NewsCardSmallImage from "../../../assets/images/news-small-card.png";
 const dataItems = [
   {
     id: 1,

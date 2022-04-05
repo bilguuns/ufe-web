@@ -21,10 +21,6 @@ export default function AppCard() {
             </div>
           </div>
         </div>
-
-        {/* <div className="more-button">
-            <MoreButton />
-          </div> */}
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">

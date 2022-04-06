@@ -37,23 +37,27 @@ const MenuDetail = ({props, id, slug, module, pageData}: any) => {
             {
                 pageData.menu.contentType === "intro" ?
                     <div className="container my-5">
-                        <BachelorCard data={bachelorCardDummyData}/>
-                        <AppCard/>
+                        <div className="row">
+                            {bachelorCardDummyData.map((data)=>{
+                                return(
+                                    <div key={data.id} className="col-md-4">
+                                        <BachelorCard key={data.id} data={data}/>
+                                    </div>
+                                )
+                            })}
+                        </div>
                     </div>
                     :
                     <div className="container  my-5">
                         <div className="row">
                             {bachelorCardDummyData.map((data)=>{
                                 return(
-                                    <div className="col-md-4">
+                                    <div key={data.id} className="col-md-4">
                                         <BachelorCard key={data.id} data={data}/>
                                     </div>
-
                                 )
                             })}
                         </div>
-
-                        <AppCard/>
                     </div>
 
 

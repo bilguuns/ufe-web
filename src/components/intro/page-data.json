@@ -1,0 +1,75 @@
+{
+  "status": "success",
+  "menu": {
+    "id": 34,
+    "parentId": 33,
+    "contentType": "intro",
+    "post": null,
+    "moduleName": "intro",
+    "translates": [
+      {
+        "id": 40,
+        "lang": "mn",
+        "name": "Оюутны холбоо",
+        "shortName": "Оюутны холбоо"
+      }
+    ]
+  },
+  "intros": [
+    {
+      "id": 38,
+      "introType": "Post",
+      "timeCreated": {
+        "date": "2022-04-06 17:48:16.000000",
+        "timezone_type": 3,
+        "timezone": "Asia/Shanghai"
+      },
+      "parentId": 0,
+      "timePublished": null,
+      "translates": [
+        {
+          "id": 42,
+          "lang": "mn",
+          "name": "Оюутны холбоо",
+          "shortName": "Оюутны холбоо",
+          "description": null
+        }
+      ],
+      "images": [],
+      "post": {
+        "id": 7,
+        "postType": "I",
+        "state": "C",
+        "timeCreated": {
+          "date": "2022-04-06 17:49:42.000000",
+          "timezone_type": 3,
+          "timezone": "Asia/Shanghai"
+        },
+        "timePublished": null
+      }
+    }
+  ],
+  "childIntros": [],
+  "introPosts": [
+    {
+      "id": 7,
+      "postType": "I",
+      "state": "C",
+      "timeCreated": {
+        "date": "2022-04-06 17:49:42.000000",
+        "timezone_type": 3,
+        "timezone": "Asia/Shanghai"
+      },
+      "timePublished": null,
+      "image": [],
+      "translates": [
+        {
+          "id": 7,
+          "lang": "mn",
+          "title": "Оюутны холбоо",
+          "briefing": "Оюутны холбоо"
+        }
+      ]
+    }
+  ]
+}

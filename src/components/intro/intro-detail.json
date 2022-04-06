@@ -1,0 +1,72 @@
+{
+  "status": "success",
+  "intros": [
+    {
+      "id": 38,
+      "introType": "Post",
+      "timeCreated": {
+        "date": "2022-04-06 17:48:16.000000",
+        "timezone_type": 3,
+        "timezone": "Asia\/Shanghai"
+      },
+      "parentId": 0,
+      "timePublished": null,
+      "translates": [
+        {
+          "id": 42,
+          "lang": "mn",
+          "name": "\u041e\u044e\u0443\u0442\u043d\u044b \u0445\u043e\u043b\u0431\u043e\u043e",
+          "shortName": "\u041e\u044e\u0443\u0442\u043d\u044b \u0445\u043e\u043b\u0431\u043e\u043e",
+          "description": null
+        }
+      ],
+      "images": [],
+      "post": {
+        "id": 7,
+        "postType": "I",
+        "state": "C",
+        "timeCreated": {
+          "date": "2022-04-06 17:49:42.000000",
+          "timezone_type": 3,
+          "timezone": "Asia\/Shanghai"
+        },
+        "timePublished": null
+      }
+    }
+  ],
+  "childIntros": [],
+  "introPosts": [
+    {
+      "id": 7,
+      "postType": "I",
+      "state": "C",
+      "timeCreated": {
+        "date": "2022-04-06 17:49:42.000000",
+        "timezone_type": 3,
+        "timezone": "Asia\/Shanghai"
+      },
+      "timePublished": null,
+      "translates": [
+        {
+          "id": 7,
+          "lang": "mn",
+          "title": "\u041e\u044e\u0443\u0442\u043d\u044b \u0445\u043e\u043b\u0431\u043e\u043e",
+          "briefing": "\u041e\u044e\u0443\u0442\u043d\u044b \u0445\u043e\u043b\u0431\u043e\u043e"
+        }
+      ],
+      "image": [],
+      "modes": [
+        {
+          "id": 1,
+          "modeType": "A",
+          "state": "A",
+          "timeCreated": {
+            "date": "2022-04-06 17:50:26.000000",
+            "timezone_type": 3,
+            "timezone": "Asia\/Shanghai"
+          }
+        }
+      ]
+    }
+  ]
+}

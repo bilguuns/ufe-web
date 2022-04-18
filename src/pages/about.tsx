@@ -19,7 +19,9 @@ const About = ({ data }: any) => {
   );
 };
 export async function getServerSideProps({ query }: any) {
-  const res = await fetch("http://127.0.0.1:8000/_api/menu");
+
+  const urlBase = process.env.NEXT_PUBLIC_ENTRYPOINT;
+  const res = await fetch(`${urlBase}/menu`);
   const data = await res.json();
 
   return {

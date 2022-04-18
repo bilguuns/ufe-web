@@ -6,9 +6,9 @@ module.exports = {
             script: "/usr/bin/yarn",
             args: "start",
             watch: false,
-            instances: 4,
+            instances: 1,
             autorestart: true,
-            max_memory_restart: "300M",
+            max_memory_restart: "2048M",
             env_development: {
                 PORT: 3081,
                 NODE_ENV: "development",

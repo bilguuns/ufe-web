@@ -1,12 +1,14 @@
-const PostDetail = ({postData}: any) => {
+import Slider from "components/common/slider";
 
-    return (
-        <>
-            <h4>{postData.translates[0].title}</h4>
-            <p>{postData.translates[0].briefing}</p>
-        </>
-    );
+const PostDetail = ({ postData }: any) => {
+  return (
+    <>
+      <h4>{postData.modes[0].translates[0].title}</h4>
+      <p>{postData.modes[0].translates[0].htmlContent}</p>
 
+      <Slider postData={postData} />
+    </>
+  );
 };
 
 export default PostDetail;

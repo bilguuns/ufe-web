@@ -2,10 +2,13 @@ import CustomButton from "../custom-button";
 import React from "react";
 
 export default function BachelorCard(props: any) {
-  const {data} = props;
+  const { data } = props;
   return (
     <>
-      <div className="card m-2" style={{ width: "100%", borderRadius: "16px", maxHeight: '452px'}}>
+      <div
+        className="card m-2"
+        style={{ width: "100%", borderRadius: "16px", maxHeight: "452px" }}
+      >
         <div className="hover-zoomin">
           <img
             className="card-img-top"
@@ -17,8 +20,16 @@ export default function BachelorCard(props: any) {
           />
         </div>
         <div className="card-body">
-          <p className="card-title fw-bold hover-underline-animation">{data.name}</p>
-          <p className="card-text">{data.description}{data.description}{data.description}{data.description}{data.description}</p>
+          <p className="card-title fw-bold hover-underline-animation">
+            {data.name}
+          </p>
+          <p className="card-text">
+            {data.description}
+            {data.description}
+            {data.description}
+            {data.description}
+            {data.description}
+          </p>
           <CustomButton />
         </div>
       </div>

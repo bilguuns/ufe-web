@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ufe_icon from "../../assets/images/Revolving-Building-Background .png";
+import ufe_icon from "../../../assets/images/Revolving-Building-Background .png";
 import { HeroStyle } from "./style";
 
 const AppHero = () => {

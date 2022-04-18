@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 import Link from "next/link";
 
 import MoreButton from "../components/common/more-button";
-import AppHero from "../components/hero";
+import AppHero from "../components/common/hero";
 // import VideoApp from "../common/video-list";
 import styles from "../styles/Home.module.css";
 import dynamic from "next/dynamic";

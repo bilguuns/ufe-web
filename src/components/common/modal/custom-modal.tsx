@@ -1,7 +1,12 @@
 import { useContext } from "react";
-import { Button, Modal } from "antd";
+// import { Button, Modal } from "antd";
+import {MDBModal} from "mdb-react-ui-kit";
+import {Modal, Button} from "react-bootstrap";
+
 
 import { ModalContext } from "lib/context/modal";
+
+
 
 const CustomModal = () => {
     const { visible, modalTitle, modalContent, handleModal }: any =

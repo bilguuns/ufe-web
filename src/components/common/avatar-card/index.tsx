@@ -23,12 +23,12 @@ const AvatarCard = (props: any) => {
           style={{ borderRadius: "16px 16px 0 0" }}
         />
 
-        <div className="card-img-overlay d-flex align-items-end">
+        <div className="card-img-overlay d-flex  flex-wrap align-items-end">
           <div className="overlay-content  ">
-            <h5 className="h5 card-title text-white  ">
+            <h5 className="h5 card-title text-white   ">
               {employeeData ? employeeData.firstName : "null"}
             </h5>
-            <h6 className="h6 card-text text-white">
+            <h6 className="h6 card-text text-white ">
               {employeeData ? employeeData.email : "null"}
             </h6>
             <CircleButton />

@@ -31,37 +31,34 @@ const EmployeeModule = ({ props, data, employeeType }: any) => {
     <>
       <div className="container my-5">
         <div className={"row"}>
-          <div className={"col-md-4"}>
+          <div className={"col-md-3"}>
             {employeeType == "teacher" && (
               <>
-                <div className=" btn btn-light fw-bold w-100  text-start">
-                  ШҮҮХ
+                <div
+                  className=" btn btn-light fw-bold w-100 text-start  "
+                  style={{ cursor: "default" }}
+                >
+                  <h5 className="mt-2 text-wrap">ШҮҮХ</h5>
                 </div>
-                <p className="fw-bold px-2">Тэнхим</p>
+                <p className="fw-bold px-2 text-wrap">Тэнхим</p>
               </>
             )}
 
             {employeeType == "teacher" && (
               <>
-                <ul
-                  className="list-unstyled .d-block 
-"
-                >
+                <ul className="list-group">
                   {department?.map((department: any, index: number) => {
                     return (
-                      // <button
-                      //   key={department.id}
-                      //   className={`btn ${index === id ? "active" : ""}`}
-                      //   onClick={() => setDepartmentId(department.id)}
-                      // > {/* <ul > */}
                       <li
                         key={department.id}
-                        className={"text-primary text-start "}
+                        className={`btn list-group-item list-group-item-action text-start mb-3 text-wrap d-block${
+                          index === department.id ? "active" : ""
+                        }`}
+                        style={{ color: "#345BB8" }}
                         onClick={() => setDepartmentId(department.id)}
                       >
                         {department.name}
                       </li>
-                      /* </ul> */ // </button>
                     );
                   })}
                 </ul>
@@ -73,7 +70,7 @@ const EmployeeModule = ({ props, data, employeeType }: any) => {
             <div className={"row"}>
               {employees.map((employee: any, index: number) => {
                 return (
-                  <div key={employee.id} className="col-md-4">
+                  <div key={employee.id} className=" col-12 col-md-6  col-lg-4">
                     <AvatarCard employeeData={employee} />
                   </div>
                 );

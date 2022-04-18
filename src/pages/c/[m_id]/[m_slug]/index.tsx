@@ -39,7 +39,7 @@ export async function getServerSideProps({ query }: any) {
 
   const urlBase = process.env.NEXT_PUBLIC_ENTRYPOINT;
 
-  const res = await fetch(`${urlBase}/_api/menu/${m_id}/detail`);
+  const res = await fetch(`${urlBase}/menu/${m_id}/detail`);
 
   console.log(res);
 

@@ -28,7 +28,7 @@ export async function getServerSideProps({ query }: any) {
 
   const urlBase = process.env.NEXT_PUBLIC_ENTRYPOINT;
 
-  const res = await fetch(`${urlBase}/_api/intro/${iId}/detail`);
+  const res = await fetch(`${urlBase}/intro/${iId}/detail`);
   const introData = await res.json();
 
   // Pass data to the page via props

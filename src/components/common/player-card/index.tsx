@@ -2,10 +2,10 @@ import YouTube from "react-youtube";
 import MoreButton from "../more-button";
 import { VideoStyle } from "./style";
 
-export default function YoutubeVideo() {
+export default function Player() {
   const videoOptions = {
-    height: "650px",
-    width: "100%",
+    height: "400px",
+    width: "400px",
     playerVars: {
       autoplay: 0,
       controls: 0,
@@ -17,11 +17,11 @@ export default function YoutubeVideo() {
   };
   return (
     <VideoStyle>
-      <section id="video_list" className="video_list section">
+      <section id="video_list" className="video_list section-bg">
         <div className="header-container container">
           <div className="row">
             <div className="col-lg">
-              <h1>UFE Улаансарнай</h1>
+              <h1>UFE Poolcast</h1>
             </div>
             <div className="col-lg">
               <div className="more-button">
@@ -31,7 +31,11 @@ export default function YoutubeVideo() {
           </div>
         </div>
         <div className="container">
-          <YouTube videoId="TGt6ne31uL8" opts={videoOptions} />
+          <div className="row">
+            <div className="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+              <YouTube videoId="TGt6ne31uL8" opts={videoOptions} />
+            </div>
+          </div>
         </div>
       </section>
     </VideoStyle>

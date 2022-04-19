@@ -11,23 +11,18 @@ const PostDetail = ({ postData }: any) => {
 
   return (
     <>
-      <h4>ASDF</h4>
       {postData.modes.map((postMode: any, index: number) => {
         return (
           <>
             <div className={"mb-4"}>
               {postMode.modeType == "G" && (
                 <>
-                  <h4>Gallery render</h4>
-
                   <Slider postMode={postMode} />
                 </>
               )}
               {postMode.modeType == "A" && (
                 <>
-                  <h4>Article</h4>
                   {postData.translates[0].title}
-
                   {ReactHtmlParser(postMode.translates[0].htmlContent)}
                 </>
               )}

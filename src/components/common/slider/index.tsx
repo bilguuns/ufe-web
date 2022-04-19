@@ -10,7 +10,6 @@ const Slider = ({postMode}: any) => {
         let url;
         for (let img of postMode.images) {
             url = "" + imgBase + img.filePath;
-            console.log("====== URL: ", url);
             imgs.push({
                 url: "" + imgBase + img.filePath
             });
@@ -21,16 +20,13 @@ const Slider = ({postMode}: any) => {
     return (
         <div>
             <>
-                {/* {imageData.map((img: any, index: number) => { */}
-                {/* console.log(img, "img"); */}
                 <SimpleImageSlider
-                    width={"80%"}
+                    width={"100%"}
                     height={"500px"}
                     images={images}
                     showBullets={false}
                     showNavs={true}
                 />
-                {/* })} */}
             </>
         </div>
     );

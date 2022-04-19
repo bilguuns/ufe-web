@@ -8,7 +8,7 @@ const IntroCard = ({ introData }: any) => {
 
   const translate: any =
     introData.translates.length > 0 ? introData.translates[0] : null;
-  const imgBase = process.env.NEXT_PUBLIC_ENTRYPOINT;
+  const imgBase = process.env.NEXT_PUBLIC_FILE_HOST;
 
   const imgSrc =
     introData.images[0] && introData.images[0].filePath

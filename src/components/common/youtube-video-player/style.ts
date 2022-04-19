@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const NewsStyle = styled.div`
+export const VideoStyle = styled.div`
   section {
     padding: 60px 0;
     overflow: hidden;

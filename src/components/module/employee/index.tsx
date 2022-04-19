@@ -51,7 +51,7 @@ const EmployeeModule = ({ props, data, employeeType }: any) => {
                     return (
                       <li
                         key={department.id}
-                        className={`btn list-group-item list-group-item-action text-start mb-3 text-wrap d-block${
+                        className={`btn list-group-item list-group-item-action text-start  text-wrap d-block${
                           index === department.id ? "active" : ""
                         }`}
                         style={{ color: "#345BB8" }}

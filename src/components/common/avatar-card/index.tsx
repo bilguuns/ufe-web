@@ -6,7 +6,7 @@ import CircleButton from "../circle-button";
 
 const AvatarCard = (props: any) => {
   const { employeeData } = props;
-  const imgBase = process.env.NEXT_PUBLIC_ENTRYPOINT;
+  const imgBase = process.env.NEXT_PUBLIC_FILE_HOST;
 
   const imgSrc =
     employeeData.images[0] && employeeData.images[0].filePath

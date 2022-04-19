@@ -31,6 +31,8 @@ export async function getServerSideProps({ query }: any) {
   const res = await fetch(`${urlBase}/intro/${iId}/detail`);
   const introData = await res.json();
 
+  console.log(introData);
+
   // Pass data to the page via props
   return { props: { m_id, m_slug, module, introData } };
 }

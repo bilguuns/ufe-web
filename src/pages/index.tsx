@@ -14,6 +14,7 @@ import PodcastCard from "../components/podcast";
 import News from "../components/common/news";
 import VideoApp from "../components/video-list";
 import CardList from "components/common/card-list";
+import YoutubeVideo from "components/common/youtube-video-player";
 
 export default function Home() {
   return (
@@ -24,11 +25,12 @@ export default function Home() {
         <meta charSet="utf-8" />
       </Head>
       <AppHero />
-      <VideoApp />
+
       <CardList />
       <PodcastCard />
       {/* <AppNews /> */}
       <News />
+      <YoutubeVideo />
     </div>
   );
 }

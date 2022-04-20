@@ -21,10 +21,7 @@ const PostDetail = ({ postData }: any) => {
                 </>
               )}
               {postMode.modeType == "A" && (
-                <>
-                  {postData.translates[0].title}
-                  {ReactHtmlParser(postMode.translates[0].htmlContent)}
-                </>
+                <>{ReactHtmlParser(postMode.translates[0].htmlContent)}</>
               )}
             </div>
           </>

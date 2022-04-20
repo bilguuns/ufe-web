@@ -4,7 +4,7 @@ import Link from "next/link";
 import { MoreButtonStyle } from "./style";
 const MoreButton = () => (
   <MoreButtonStyle>
-    <Link href="events">
+    <Link href="">
       <a>Бүгдийг харах</a>
     </Link>
     <BsArrowRightShort style={{ color: "#345BB8", fontSize: "30px" }} />

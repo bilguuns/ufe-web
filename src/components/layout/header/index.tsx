@@ -17,7 +17,7 @@ const MainHeader = () => {
         <div className="d-flex align-items-center justify-content-between">
           <Link href="/">
             <div className="img">
-              <Image width={155} height={48} alt="example" src={image} />
+              <Image width={155} height={42} alt="example" src={image} />
             </div>
           </Link>
           <div>

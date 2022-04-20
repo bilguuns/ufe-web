@@ -26,7 +26,7 @@ export default function Home() {
         <meta charSet="utf-8" />
       </Head>
       <AppHero />
-      <CardList />
+      {/* <CardList /> */}
       {/* <PodcastCard /> */}
 
       {/* <AppNews /> */}

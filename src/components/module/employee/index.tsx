@@ -3,6 +3,7 @@ import { EmployeeAPI } from "lib/api/employee";
 import { DepartmentAPI } from "lib/api/department";
 // import { EmployeeSWR } from "lib/api/employee";
 import React, { useEffect, useState } from "react";
+import { WidgetAPI } from "lib/api/widget";
 
 const EmployeeModule = ({ props, data, employeeType }: any) => {
   const [employees, setEmployees]: any = useState([]);

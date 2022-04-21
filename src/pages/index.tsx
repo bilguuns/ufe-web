@@ -12,26 +12,30 @@ import Card from "../components/common/card";
 import PodcastCard from "../components/podcast";
 // import AppNews from "../components/industry-news";
 import News from "../components/common/news";
-import VideoApp from "../components/video-list";
 import CardList from "components/common/card-list";
 import YoutubeVideo from "components/common/youtube-video-player";
 import Player from "components/common/player-card";
+import VideoPlayer from "components/common/video-player";
+import Widget from "components/widget";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Head>
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
+        <meta charSet="utf-8" />\
       </Head>
-      <AppHero />
+
+      {/* <AppHero /> */}
+
+      <VideoPlayer />
+
       {/* <CardList /> */}
       {/* <PodcastCard /> */}
 
-      {/* <AppNews /> */}
-
-      <News />
+      <Widget />
+      {/* <News /> */}
       <Player />
       <YoutubeVideo />
     </div>

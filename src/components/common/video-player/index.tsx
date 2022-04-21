@@ -1,21 +1,24 @@
 import React from "react";
-import {Player} from "video-react";
+import { Player, ControlBar, ReplayControl } from "video-react";
 import "video-react/dist/video-react.css";
-import MoreButton from "../more-button";
-import Image from "next/image";
-import poster from "../../assets/images/video-image.png";
+import { HeroStyle } from "./style";
 
 const VideoPlayer = () => {
-
-    // <Player>
-    //   <source
-    //     src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-    //     type="video/mp4"
-    //   />
-    // </Player>
-
-    return <></>
-
+  return (
+    <>
+      <HeroStyle>
+        <div className="video">
+          <Player autoPlay loop muted startTime>
+            <source src="/videos/Сургууль хурдан.mp4" type="video/mp4" />
+            <ControlBar disableCompletely={true} />
+          </Player>
+        </div>
+        <div className="overlay ">
+          <h2>Эрхэм баян Эрдэм</h2>
+        </div>
+      </HeroStyle>
+    </>
+  );
 };
 
 export default VideoPlayer;

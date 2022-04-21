@@ -106,4 +106,12 @@ export const VideoStyle = styled.div`
   .header-container {
     margin-bottom: 30px;
   }
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 `;

@@ -7,10 +7,10 @@ export const AppNewsBig = (props: any) => {
 
   const imgBase = process.env.NEXT_PUBLIC_FILE_HOST;
   const translate: any =
-    newsData.translates.length > 0 ? newsData.translates[0] : null;
+    newsData?.translates.length > 0 ? newsData.translates[0] : null;
 
   const imgSrc =
-    newsData.image[0] && newsData.image[0].filePath
+    newsData?.image[0] && newsData.image[0].filePath
       ? imgBase + newsData.image[0].filePath
       : null;
   return (

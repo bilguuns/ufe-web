@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image1 from "../../assets/images/ufe-logo-footer.png";
+import Image1 from "../../assets/images/new_logo_footer.png";
 import AppStore from "../../assets/images/app-store.png";
 import PlayStore from "../../assets/images/play-store.png";
 import Facebook from "../../assets/images/facebook.png";
@@ -8,15 +8,21 @@ import LinkedIn from "../../assets/images/LinkedIn.png";
 import Instagram from "../../assets/images/Instagram.png";
 import Youtube from "../../assets/images/YouTube.png";
 import { FooterStyle } from "./style";
+import Link from "next/link";
 const Footer = () => {
   return (
     <FooterStyle>
       <footer>
         <div className="footer-content">
           <div className="container">
+            <Link href="/">
+              <div className="img">
+                <Image width={155} height={34} alt="example" src={Image1} />
+              </div>
+            </Link>
+
             <div className="row justify-content-between">
               <div className="col-lg-4 col-md-12">
-                <Image width={155} height={48} alt="example" src={image1} />
                 <div className="m">
                   <ul>
                     <li>

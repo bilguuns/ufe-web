@@ -25,8 +25,6 @@ export default function Player() {
     ],
   };
 
-  console.log("ffkfkfkfkfkfkfkfkkfkfkf", poolcasts);
-
   const videoOptions = {
     height: "400px",
     width: "400px",
@@ -47,6 +45,7 @@ export default function Player() {
             <div className="col-lg">
               <h1>UFE Poolcast</h1>
             </div>
+
             <div className="col-lg">
               <div className="more-button">
                 <MoreButton />
@@ -54,53 +53,65 @@ export default function Player() {
             </div>
           </div>
         </div>
+
         <div className="container">
-          <div className="col-md-8">
+          <div className="col-md-12">
             <div className={"row"}>
-              <div className=" col-12 col-md-6  col-lg-4">
-                <div
-                  className="card "
-                  style={{ width: "100%", borderRadius: "16px" }}
-                >
-                  <img
-                    className="card-img-top"
-                    src="/image/podcast.png"
-                    alt="image-alt-text"
-                    style={{ borderRadius: "16px 16px 0 0" }}
-                  />
-                  <div className="card-img-overlay d-flex  flex-wrap align-items-end">
-                    <div className="overlay-content">
-                      {/* <h5 className="h5 card-title text-white"> */}
-                      <div>
-                        <a href="https://www.youtube.com/watch?v=1PKUc4OlDEY&list=PLqnoOV7X-q8e0Yi7gtSTlQAmz95O-VwHR">
+              {poolcasts?.poolcasts?.map((item: any, index: any) => {
+                return (
+                  <>
+                    {index < 3 && (
+                      <div className="col-md-4 ">
+                        <div
+                          key={item.id}
+                          className="card"
+                          style={{ width: "100%", borderRadius: "16px" }}
+                        >
                           <img
-                            className="vertical-center"
-                            src="/icon/play-fill.svg"
+                            className="card-img-top"
+                            src="/image/podcast.png"
                             alt="image-alt-text"
+                            style={{ borderRadius: "16px 16px 0 0" }}
                           />
-                        </a>
+                          <div className="card-img-overlay d-flex  flex-wrap align-items-end">
+                            <div className="overlay-content">
+                              <div>
+                                <a href={item.url}>
+                                  <img
+                                    className="vertical-center"
+                                    src="/icon/play-fill.svg"
+                                    alt="image-alt-text"
+                                  />
+                                </a>
+                              </div>
+
+                              <button
+                                className="btn btn-primary "
+                                style={{
+                                  marginBottom: "4px",
+                                  borderRadius: "6px",
+                                }}
+                              >
+                                “Бэтта” CEO Г. Төгөлдөр
+                              </button>
+                              <br />
+                              <button
+                                className="btn btn-warning"
+                                style={{
+                                  borderRadius: "6px",
+                                }}
+                              >
+                                Poolcast Ep. 1
+                              </button>
+                              {/* </h6> */}
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      {/* </h5> */}
-                      {/* <h6 className="h6 card-text text-white "> */}
-                      <button
-                        className="btn btn-primary "
-                        style={{ marginBottom: "4px", borderRadius: "6px" }}
-                      >
-                        “Бэтта” CEO Г. Төгөлдөр
-                      </button>
-                      <button
-                        className="btn btn-warning"
-                        style={{
-                          borderRadius: "6px",
-                        }}
-                      >
-                        Poolcast Ep. 1
-                      </button>
-                      {/* </h6> */}
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    )}
+                  </>
+                );
+              })}
             </div>
           </div>
         </div>

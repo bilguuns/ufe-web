@@ -17,7 +17,7 @@ export const AppNewsSmall = (props: any) => {
       : null;
 
   return (
-    <div>
+    <>
       <div className="row gx-5 small-news-card ">
         <div className="col-8 .col-md-8">
           <div className="small-news">
@@ -36,6 +36,6 @@ export const AppNewsSmall = (props: any) => {
         </div>
       </div>
       <hr />
-    </div>
+    </>
   );
 };

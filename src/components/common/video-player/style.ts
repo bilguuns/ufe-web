@@ -34,18 +34,17 @@ export const HeroStyle = styled.div`
   }
   .overlay {
     position: relative;
-    margin-top: 30vh;
-
     min-height: 100vh;
     display: flex;
     justify-content: left;
   }
   .overlay h2 {
+    margin-top: 30vh;
     position: absolute;
     font-size: 6vh;
 
     color: white;
-    margin: 2rem 3rem 0;
+    margin: 15rem 3rem 0;
     mix-blend-mode: hard-light;
     padding: 5px 15px;
     text-align: center;

@@ -39,26 +39,25 @@ const Widget = ({}: any) => {
           </div>
           <div className="container">
             <div className="row gx-5">
-              {news.map((news: any, index: number) => {
-                return (
-                  <>
-                    {index == 0 && (
-                      <div className="col-lg-8">
-                        <div key={news.id}>
-                          <AppNewsBig newsData={news} />
-                        </div>
-                      </div>
-                    )}
-                    {index > 0 && (
-                      <div className="col-lg-4">
+              <div className="col-lg-8">
+                <div>
+                  <AppNewsBig newsData={news[0]} />
+                </div>
+              </div>
+
+              <div className={"col-lg-4"}>
+                {news.map((news: any, index: number) => {
+                  return (
+                    <>
+                      {index > 0 && (
                         <div key={news.id}>
                           <AppNewsSmall newsData={news} />
                         </div>
-                      </div>
-                    )}
-                  </>
-                );
-              })}
+                      )}
+                    </>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </section>

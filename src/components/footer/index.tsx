@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="container">
             <Link href="/">
               <div className="img">
-                <Image width={155} height={34} alt="example" src={Image1} />
+                <Image width={155} height={32} alt="example" src={Image1} />
               </div>
             </Link>
 

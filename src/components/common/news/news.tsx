@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import DateCard from "../date-card";
 
 export const AppNewsBig = (props: any) => {
   const { newsData } = props;
@@ -14,14 +16,22 @@ export const AppNewsBig = (props: any) => {
       ? imgBase + newsData.image[0].filePath
       : null;
   return (
-    <div className="hover-zoomin">
-      <a>
-        {/* <Image src={NewsCardImage} alt="" layout="responsive" /> */}
-        <img src={`${imgSrc}`} alt="image-alt-text" />
-      </a>
-      <h1>{translate?.title}</h1>
+    <>
+      <Link href="widgetDetail">
+        <a>
+          <div>
+            <div className="hover-zoomin">
+              <a>
+                <img src={`${imgSrc}`} alt="image-alt-text" />
+              </a>
+            </div>
 
-      {/* <h1>“UFE NETWORKING 2021” амжилттай зохион байгуулагдаж өнгөрлөө</h1> */}
-    </div>
+            <h1>{translate?.title}</h1>
+          </div>
+        </a>
+      </Link>
+
+      <DateCard newsDate={newsData?.timePublished} />
+    </>
   );
 };

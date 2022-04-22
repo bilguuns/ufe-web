@@ -9,14 +9,11 @@ import AppHero from "../components/common/hero";
 import styles from "../styles/Home.module.css";
 import dynamic from "next/dynamic";
 import Card from "../components/common/card";
-import PodcastCard from "../components/podcast";
-// import AppNews from "../components/industry-news";
-import News from "../components/common/news";
-import CardList from "components/common/card-list";
+
 import YoutubeVideo from "components/common/youtube-video-player";
-import Player from "components/common/player-card";
 import VideoPlayer from "components/common/video-player";
 import Widget from "components/widget";
+import Poolcast from "components/poolcasts";
 
 export default function Home() {
   return (
@@ -36,7 +33,7 @@ export default function Home() {
 
       <Widget />
       {/* <News /> */}
-      <Player />
+      <Poolcast />
       <YoutubeVideo />
     </div>
   );

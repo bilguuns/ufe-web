@@ -33,8 +33,8 @@ export const HeroStyle = styled.div`
     object-position: center;
   }
   .overlay {
-    position: relative;
-    min-height: 100vh;
+    // position: relative;
+    min-height: 900px;
     display: flex;
     justify-content: left;
   }

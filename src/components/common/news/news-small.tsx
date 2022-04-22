@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import NewsCardSmallImage from "../../../assets/images/news-small-card.png";
+import DateCard from "../date-card";
 
 export const AppNewsSmall = (props: any) => {
   const { newsData } = props;
@@ -23,9 +24,10 @@ export const AppNewsSmall = (props: any) => {
           <div className="small-news">
             <p>{translate?.title}</p>
           </div>
+          <DateCard newsDate={newsData?.timePublished} />
         </div>
 
-        <div className="col-4 .col-md-4">
+        <div className="col-4 .col-md-8">
           <div className="small-image">
             <div className="hover-zoomin">
               <a>

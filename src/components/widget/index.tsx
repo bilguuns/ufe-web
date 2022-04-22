@@ -49,7 +49,7 @@ const Widget = ({}: any) => {
                 {news.map((news: any, index: number) => {
                   return (
                     <>
-                      {index > 0 && index < 4 && (
+                      {index > 0 && index < 5 && (
                         <div key={news.id}>
                           <AppNewsSmall newsData={news} />
                         </div>

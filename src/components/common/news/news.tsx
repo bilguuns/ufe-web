@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
+import CustomButton from "../custom-button";
 import DateCard from "../date-card";
 
 export const AppNewsBig = (props: any) => {
   const { newsData } = props;
-
-  console.log("newsDatanewsDatanewsDatanewsDatanewsData", newsData);
+  console.log("qqqqqqqqqqqqq", newsData?.id);
 
   const imgBase = process.env.NEXT_PUBLIC_FILE_HOST;
   const translate: any =
@@ -17,7 +18,7 @@ export const AppNewsBig = (props: any) => {
       : null;
   return (
     <>
-      <Link href="widgetDetail">
+      <Link href={`/widgetDetail/${newsData?.id}`}>
         <a>
           <div style={{ position: "relative" }}>
             <div className="hover-zoomin">

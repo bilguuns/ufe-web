@@ -19,16 +19,19 @@ const IntroCard = ({ introData }: any) => {
     <>
       <div
         className="card m-2"
-        style={{ width: "100%", borderRadius: "16px", maxHeight: "452px" }}
+        style={{ width: "100%", borderRadius: "16px", height: "100%" }}
       >
         <div className="hover-zoomin">
           <img
             className="card-img-top"
             src={`${imgSrc}`}
             alt="image-alt-text"
-            width={350}
-            height={200}
-            style={{ borderRadius: "16px 16px 0 0" }}
+            style={{
+              borderRadius: "16px 16px 0 0",
+              objectFit: "cover",
+              width: "100%",
+              height: "200px",
+            }}
           />
         </div>
         <div className="card-body">

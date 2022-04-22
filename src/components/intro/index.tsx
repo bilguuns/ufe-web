@@ -15,7 +15,7 @@ const Intro = ({ introData }: any) => {
         <div className={"row"}>
           {intros.map((intro: any, index: number) => {
             return (
-              <div key={intro.id} className="col-md-4">
+              <div key={intro.id} className="col-md-4 mb-3">
                 <IntroCard introData={intro} />
               </div>
             );

@@ -19,7 +19,7 @@ export const AppNewsBig = (props: any) => {
     <>
       <Link href="widgetDetail">
         <a>
-          <div>
+          <div style={{ position: "relative" }}>
             <div className="hover-zoomin">
               <a>
                 <img src={`${imgSrc}`} alt="image-alt-text" />

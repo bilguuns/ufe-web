@@ -7,15 +7,27 @@ const VideoPlayer = () => {
   return (
     <>
       <HeroStyle>
-        <div className="video">
-          <Player autoPlay loop muted startTime>
-            <source src="/videos/Сургууль хурдан.mp4" type="video/mp4" />
-            <ControlBar disableCompletely={true} />
-          </Player>
-        </div>
-        <div className="overlay ">
-          <h2>Эрхэм баян Эрдэм</h2>
-        </div>
+        <header>
+          <div className="overlay"></div>
+
+          <div className="video">
+            <Player autoPlay loop muted startTime>
+              <source src="/videos/Сургууль хурдан.mp4" type="video/mp4" />
+              <ControlBar disableCompletely={true} />
+            </Player>
+          </div>
+          <div className="container h-100">
+            <div className="d-flex h-100 text-left align-items-center">
+              <div
+                className="w-100 text-white"
+                style={{ marginBottom: "200px" }}
+              >
+                <h1 className="display-3">Санхүү эдийн засгийн их сургууль</h1>
+                <p className="lead mb-0">Эрхэм баян эрдэм</p>
+              </div>
+            </div>
+          </div>
+        </header>
       </HeroStyle>
     </>
   );

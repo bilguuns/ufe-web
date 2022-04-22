@@ -21,7 +21,14 @@ export const HeroStyle = styled.div`
   p {
     font-size: 20px;
   }
-  .video {
+  header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+  }
+
+  header .video {
     position: absolute;
     top: 0;
     left: 0;
@@ -32,20 +39,27 @@ export const HeroStyle = styled.div`
     -o-object-position: center;
     object-position: center;
   }
-  .overlay {
-    // position: relative;
-    min-height: 900px;
-    display: flex;
-    justify-content: left;
+
+  header .container {
+    position: relative;
+    z-index: 2;
   }
-  .overlay h2 {
+
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  .h2 {
     margin-top: 30vh;
     position: absolute;
     font-size: 6vh;
-
     color: white;
     margin: 15rem 3rem 0;
-    mix-blend-mode: hard-light;
     padding: 5px 15px;
     text-align: center;
   }

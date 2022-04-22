@@ -31,9 +31,7 @@ const Widget = ({}: any) => {
                 <h1>UFE мэдээ</h1>
               </div>
               <div className="col-lg">
-                <div className="more-button">
-                  <MoreButton />
-                </div>
+                <div className="more-button">{/* <MoreButton /> */}</div>
               </div>
             </div>
           </div>

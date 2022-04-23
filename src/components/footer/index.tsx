@@ -34,12 +34,17 @@ const Footer = () => {
                   </ul>
                   <div className="img">
                     <div className="icon">
-                      <Image
-                        width={36}
-                        height={36}
-                        alt="example"
-                        src={Facebook}
-                      />
+                      <a
+                        target="https://www.facebook.com/ufe.edu.mn"
+                        href="https://www.facebook.com/ufe.edu.mn"
+                      >
+                        <Image
+                          width={36}
+                          height={36}
+                          alt="example"
+                          src={Facebook}
+                        />
+                      </a>
                     </div>
                     <div className="icon">
                       <Image
@@ -52,31 +57,46 @@ const Footer = () => {
                     </div>
 
                     <div className="icon">
-                      <Image
-                        width={36}
-                        className="icon"
-                        height={36}
-                        alt="example"
-                        src={LinkedIn}
-                      />
+                      <a
+                        href="https://www.linkedin.com/school/ufemongolia/?challengeId=AQFJ9qqEC_2eIwAAAYBVHMh5KZJgxtfjCP7jIWerdXlrB1ZzLkDsRQQ7ABz19NW92EmLwKx8NOhTUxI6ujYL8D5JDTtNgVb8wg&submissionId=93b49963-b672-e816-c197-c8766d5cad1e"
+                        target="https://www.linkedin.com/school/ufemongolia/?challengeId=AQFJ9qqEC_2eIwAAAYBVHMh5KZJgxtfjCP7jIWerdXlrB1ZzLkDsRQQ7ABz19NW92EmLwKx8NOhTUxI6ujYL8D5JDTtNgVb8wg&submissionId=93b49963-b672-e816-c197-c8766d5cad1e"
+                      >
+                        <Image
+                          width={36}
+                          className="icon"
+                          height={36}
+                          alt="example"
+                          src={LinkedIn}
+                        />
+                      </a>
                     </div>
                     <div className="icon">
-                      <Image
-                        width={36}
-                        className="icon"
-                        height={36}
-                        alt="example"
-                        src={Instagram}
-                      />
+                      <a
+                        target="https://www.instagram.com/ufe.edu.mn/"
+                        href="https://www.instagram.com/ufe.edu.mn/"
+                      >
+                        <Image
+                          width={36}
+                          className="icon"
+                          height={36}
+                          alt="example"
+                          src={Instagram}
+                        />
+                      </a>
                     </div>
                     <div className="icon">
-                      <Image
-                        width={36}
-                        className="icon"
-                        height={36}
-                        alt="example"
-                        src={Youtube}
-                      />
+                      <a
+                        target="https://www.youtube.com/c/UFEMedia"
+                        href="https://www.youtube.com/c/UFEMedia"
+                      >
+                        <Image
+                          width={36}
+                          className="icon"
+                          height={36}
+                          alt="example"
+                          src={Youtube}
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -93,15 +113,32 @@ const Footer = () => {
               <div className="col-lg-2 col-md-12">
                 Апп татах
                 <div className="m2">
-                  <Image width={155} height={48} alt="example" src={AppStore} />
+                  <a
+                    href="https://apps.apple.com/mn/app/ufe/id1460577287"
+                    target="https://apps.apple.com/mn/app/ufe/id1460577287"
+                  >
+                    <Image
+                      width={155}
+                      height={48}
+                      alt="example"
+                      src={AppStore}
+                    />
+                  </a>
                   <br />
-                  <Image
-                    width={155}
-                    height={48}
-                    alt="example"
-                    src={PlayStore}
-                  />
+
+                  <a
+                    href="https://play.google.com/store/apps/details?id=mn.ufe.brand_app"
+                    target="https://play.google.com/store/apps/details?id=mn.ufe.brand_app"
+                  >
+                    <Image
+                      width={155}
+                      height={48}
+                      alt="example"
+                      src={PlayStore}
+                    />
+                  </a>
                 </div>
+                <br />
               </div>
               <hr />
               <p className="footer-p">© 2022 UFE. All rights reserved.</p>

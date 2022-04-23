@@ -8,7 +8,7 @@ import { NewsStyle } from "components/common/news/style";
 import { WidgetAPI } from "lib/api/widget";
 import React, { useEffect, useState } from "react";
 
-const Widget = ({}: any) => {
+const Widgets = ({}: any) => {
   const [news, setNews]: any = useState([]);
 
   const loadEmployees = async () => {
@@ -26,35 +26,16 @@ const Widget = ({}: any) => {
     <>
       <NewsStyle>
         <section id="news_list" className="news_list section">
-          <div className="header-container container">
-            <div className="row">
-              <div className="col-lg">
-                <h1>UFE мэдээ</h1>
-              </div>
-              <div className="col-lg">
-                <div className="more-button">
-                  <MoreButton2 />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="container">
+          <div className="container mt-5">
             <div className="row gx-5">
-              <div className="col-lg-8">
-                <div>
-                  <AppNewsBig newsData={news[0]} />
-                </div>
-              </div>
-
-              <div className={"col-lg-4"}>
+              <div className={"col-lg-8"}>
+                <h1>Мэдээ</h1>
                 {news.map((news: any, index: number) => {
                   return (
                     <>
-                      {index > 0 && index < 5 && (
-                        <div key={news.id}>
-                          <AppNewsSmall newsData={news} />
-                        </div>
-                      )}
+                      <div key={news.id}>
+                        <AppNewsSmall newsData={news} />
+                      </div>
                     </>
                   );
                 })}
@@ -66,4 +47,4 @@ const Widget = ({}: any) => {
     </>
   );
 };
-export default Widget;
+export default Widgets;

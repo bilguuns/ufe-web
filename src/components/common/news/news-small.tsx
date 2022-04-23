@@ -40,10 +40,9 @@ export const AppNewsSmall = (props: any) => {
               </div>
             </div>
           </div>
+          <hr />
         </a>
       </Link>
-
-      <hr />
     </>
   );
 };

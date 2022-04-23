@@ -19,7 +19,6 @@ export const WidgetAPI = {
     if (status != 200) {
       return [];
     }
-    console.log(data, "flfkffkfkfkkfkf");
 
     return data.posts;
   },

@@ -19,7 +19,7 @@ export const WidgetDetailId = (props: any) => {
       : null;
 
   return (
-    <div className="container my-5">
+    <div className="container mt-5 ">
       <div>
         <div className="hover-zoomin">
           <a>

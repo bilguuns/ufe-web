@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import NewsCardSmallImage from "../../../assets/images/news-small-card.png";
 import DateCard from "../date-card";
+import Link from "next/link";
 
 export const AppNewsSmall = (props: any) => {
   const { newsData } = props;
@@ -19,24 +20,29 @@ export const AppNewsSmall = (props: any) => {
 
   return (
     <>
-      <div className="row gx-5 small-news-card ">
-        <div className="col-8 .col-md-8">
-          <div className="small-news">
-            <p>{translate?.title}</p>
-          </div>
-          <DateCard newsDate={newsData?.timePublished} />
-        </div>
+      <Link href={`/widgetDetail/${newsData?.id}`}>
+        <a>
+          <div className="row gx-5 small-news-card ">
+            <div className="col-8 .col-md-8">
+              <div className="small-news">
+                <p>{translate?.title}</p>
+              </div>
+              <DateCard newsDate={newsData?.timePublished} />
+            </div>
 
-        <div className="col-4 .col-md-8">
-          <div className="small-image">
-            <div className="hover-zoomin">
-              <a>
-                <img src={`${imgSrc}`} alt="image-alt-text" />
-              </a>
+            <div className="col-4 .col-md-8">
+              <div className="small-image">
+                <div className="hover-zoomin">
+                  <a>
+                    <img src={`${imgSrc}`} alt="image-alt-text" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </a>
+      </Link>
+
       <hr />
     </>
   );

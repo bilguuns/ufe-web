@@ -20,13 +20,15 @@ const Slider = ({ postMode }: any) => {
   return (
     <div>
       <>
-        <SimpleImageSlider
-          width={"100%"}
-          height={"500px"}
-          images={images}
-          showBullets={false}
-          showNavs={true}
-        />
+        <div className="container my-4">
+          <SimpleImageSlider
+            width={"100%"}
+            height={"500px"}
+            images={images}
+            showBullets={false}
+            showNavs={true}
+          />
+        </div>
       </>
     </div>
   );

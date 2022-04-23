@@ -18,9 +18,6 @@ export const WidgetDetailId = (props: any) => {
       ? imgBase + pageData.Posts[0].image[0].filePath
       : null;
 
-  console.log(pageData, "pageDatapageDatapageDatapageData");
-  console.log(pageData.Posts.id, "pageDatapageDatapageDatapageData");
-
   return (
     <div className="container my-5">
       <div>
@@ -28,8 +25,8 @@ export const WidgetDetailId = (props: any) => {
           <a>
             <img
               src={`${imgSrc}`}
-              width="1200px"
-              height="600px"
+              width="100%"
+              height="500px"
               alt="image-alt-text"
             />
           </a>
@@ -38,21 +35,23 @@ export const WidgetDetailId = (props: any) => {
       </div>
 
       <DateCard newsDate={pageData?.Posts[0].timePublished.date} />
-      {/* <p>
-        {ReactHtmlParser(pageData?.Posts[0].modes[0].translates[0].htmlContent)}
-      </p>
-      <Slider postMode={postMode} /> */}
 
-      <div className={"mb-4"}>
-        <>
-          <Slider postMode={pageData?.Posts[0].modes[0]} />
-        </>
-        <>
-          {ReactHtmlParser(
-            pageData?.Posts[0].modes[0].translates[0].htmlContent
-          )}
-        </>
-      </div>
+      {pageData.Posts[0].modes.map((postMode: any, index: number) => {
+        return (
+          <>
+            <div className={"mb-4"}>
+              {postMode.modeType == "G" && (
+                <>
+                  <Slider postMode={postMode} />
+                </>
+              )}
+              {postMode.modeType == "A" && (
+                <>{ReactHtmlParser(postMode.translates[0].htmlContent)}</>
+              )}
+            </div>
+          </>
+        );
+      })}
     </div>
   );
 };

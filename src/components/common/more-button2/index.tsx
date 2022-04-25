@@ -5,7 +5,7 @@ import { MoreButtonStyle } from "./style";
 const MoreButton2 = ({ url }: any) => (
   <MoreButtonStyle>
     <Link href={"widgets"}>
-      <a>
+      <a style={{ fontSize: "16px", lineHeight: "24px" }}>
         Бүгдийг харах
         <BsArrowRightShort style={{ color: "#345BB8", fontSize: "30px" }} />
       </a>

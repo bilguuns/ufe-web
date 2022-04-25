@@ -35,8 +35,10 @@ const PoolcastCard = (props: any) => {
                 className="text-center text-white "
                 style={{
                   marginTop: "16px",
-                  color: "#FFFFFF",
                   fontWeight: "400",
+                  fontSize: "14px",
+                  lineHeight: "24px",
+                  color: "#FFFFFF",
                 }}
               >
                 {item?.title}
@@ -53,8 +55,10 @@ const PoolcastCard = (props: any) => {
                 className="text-center  text-dark"
                 style={{
                   marginTop: "16px",
-                  color: "#FFFFFF",
                   fontWeight: "400",
+                  fontSize: "14px",
+                  lineHeight: "24px",
+                  color: "#393E41",
                 }}
               >
                 {item?.name}

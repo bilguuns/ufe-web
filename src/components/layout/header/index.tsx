@@ -45,6 +45,8 @@ const MainHeader = () => {
                   backgroundColor: "transparent",
                   color: "#FFFFFF",
                   boxShadow: "none",
+                  fontSize: "16px",
+                  lineHeight: "24px",
                 }}
               >
                 <div style={{ backgroundColor: "transparent" }}>
@@ -59,7 +61,7 @@ const MainHeader = () => {
                   console.log("Main nav toggle");
                   setNavOpen(!navOpen);
                 }}
-                style={{ width: "150px" }}
+                style={{ width: "150px", fontSize: "16px", lineHeight: "24px" }}
               >
                 <BsList
                   className="menu"

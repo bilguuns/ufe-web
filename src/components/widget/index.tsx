@@ -14,8 +14,6 @@ const Widget = ({}: any) => {
   const loadEmployees = async () => {
     const emps = await WidgetAPI.all();
     setNews(emps);
-
-    console.log("pororoorororo", emps);
   };
 
   useEffect(() => {
@@ -29,7 +27,9 @@ const Widget = ({}: any) => {
           <div className="header-container container">
             <div className="row">
               <div className="col-lg">
-                <h1>UFE мэдээ</h1>
+                <h1 style={{ fontSize: "40px", lineHeight: "54px" }}>
+                  UFE мэдээ
+                </h1>
               </div>
               <div className="col-lg">
                 <div className="more-button">

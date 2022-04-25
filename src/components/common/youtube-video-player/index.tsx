@@ -21,7 +21,9 @@ export default function YoutubeVideo() {
         <div className="header-container container">
           <div className="row">
             <div className="col-lg">
-              <h1>UFE Улаансарнай</h1>
+              <h1 style={{ fontSize: "40px", lineHeight: "54px" }}>
+                UFE Улаансарнай
+              </h1>
             </div>
             <div className="col-lg">
               {/* <div className="more-button">

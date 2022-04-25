@@ -18,7 +18,7 @@ const Poolcasts = () => {
               {poolcastsData?.map((item: any, index: any) => {
                 return (
                   <>
-                    <div key={item.id} className="col-md-4">
+                    <div key={item.id} className="col-md-4 mb-3">
                       <PoolcastCard item={item} />
                     </div>
                   </>

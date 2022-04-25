@@ -27,7 +27,9 @@ export const AppNewsBig = (props: any) => {
               </a>
             </div>
 
-            <h1>{translate?.title}</h1>
+            <h1 style={{ fontSize: "40px", lineHeight: "54px" }}>
+              {translate?.title}
+            </h1>
           </div>
         </a>
       </Link>

@@ -17,20 +17,32 @@ const VideoPlayer = () => {
               </Player>
             </div>
             <div className="container h-100">
-              <div className="d-flex h-100 text-left align-items-center">
+              <div
+                className="d-flex h-100 text-left align-items-center"
+                style={{ marginLeft: "-20px" }}
+              >
                 <div
                   className="w-100 text-white"
-                  style={{ marginBottom: "200px" }}
+                  style={{ marginBottom: "200px", fontWeight: "4vw" }}
                 >
                   <h1
                     className="display-3 text-start fw-bold"
-                    style={{ color: "#FFFFFF", fontSize: "4vw" }}
+                    style={{
+                      color: "#FFFFFF",
+                      fontSize: "64px",
+                      lineHeight: "88px",
+                    }}
                   >
                     Санхүү эдийн засгийн их сургууль
                   </h1>
                   <p
                     className="lead mb-0"
-                    style={{ color: "#FFFFFF", fontSize: "2vw" }}
+                    style={{
+                      color: "#FFFFFF",
+                      fontWeight: "400",
+                      fontSize: "20px",
+                      lineHeight: "32px",
+                    }}
                   >
                     Эрхэм баян эрдэм
                   </p>

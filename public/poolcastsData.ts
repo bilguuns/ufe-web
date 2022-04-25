@@ -15,7 +15,7 @@ export const poolcastsData = [
   },
   {
     id: 3,
-    title: " Мэдээллийн системийн менежмент мэргэжлийн тухай",
+    title: " Мэргэжлийн тухай",
     name: "Poolcast EP.7",
 
     url: "https://www.youtube.com/watch?v=2t-3sY-DKLA&list=PLqnoOV7X-q8e0Yi7gtSTlQAmz95O-VwHR&index=3",

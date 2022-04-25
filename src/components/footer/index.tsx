@@ -101,7 +101,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-12 ">
+              {/* <div className="col-lg-4 col-md-12 ">
                 Нээлттэй ажлын байр
                 <div className="m1">
                   <ul>
@@ -109,10 +109,19 @@ const Footer = () => {
                     <li>Анкет авах</li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
               <div className="col-lg-2 col-md-12">
-                Апп татах
-                <div className="m2">
+                <p
+                  style={{
+                    fontWeight: "700",
+                    fontSize: "16px",
+                    lineHeight: "24px",
+                    marginTop: "-40px",
+                  }}
+                >
+                  Апп татах
+                </p>
+                <div className="m2" style={{ marginTop: "40px" }}>
                   <a
                     href="https://apps.apple.com/mn/app/ufe/id1460577287"
                     target="https://apps.apple.com/mn/app/ufe/id1460577287"
@@ -124,7 +133,6 @@ const Footer = () => {
                       src={AppStore}
                     />
                   </a>
-                  <br />
 
                   <a
                     href="https://play.google.com/store/apps/details?id=mn.ufe.brand_app"
@@ -140,7 +148,8 @@ const Footer = () => {
                 </div>
                 <br />
               </div>
-              <hr />
+              <div className="col-lg-4 col-md-12 "></div>
+              <hr style={{ marginTop: "10px" }} />
               <p className="footer-p">© 2022 UFE. All rights reserved.</p>
             </div>
           </div>

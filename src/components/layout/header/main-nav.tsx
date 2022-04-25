@@ -129,6 +129,8 @@ const MainNav = ({ navOpen, setNavOpen, navIsAnimating, closeNav }: any) => {
                               style={{
                                 backgroundColor: "transparent",
                                 color: "#FFFFFF",
+                                fontSize: "40px",
+                                lineHeight: "54px",
                               }}
                             >
                               <Link
@@ -173,6 +175,8 @@ const MainNav = ({ navOpen, setNavOpen, navIsAnimating, closeNav }: any) => {
                               style={{
                                 backgroundColor: "transparent",
                                 color: "#FFFFFF",
+                                fontSize: "40px",
+                                lineHeight: "54px",
                               }}
                             >
                               <Link

@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import SimpleImageSlider from "react-simple-image-slider";
+import Carousel from "react-bootstrap/Carousel";
 
-const Slider = ({ postMode }: any) => {
+const Slider = (props: any) => {
+  const { postMode } = props;
+
   const [images, setImages]: any = useState([]);
   const imgBase = process.env.NEXT_PUBLIC_FILE_HOST;
 
@@ -16,18 +19,37 @@ const Slider = ({ postMode }: any) => {
     }
     setImages(imgs);
   }, []);
-
+  const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex: any, e: any) => {
+    setIndex(selectedIndex);
+  };
   return (
     <div>
       <>
-        <div className="container my-4">
-          <SimpleImageSlider
-            width={"100%"}
-            height={"500px"}
-            images={images}
-            showBullets={false}
-            showNavs={true}
-          />
+        <div className="mt-5">
+          <Carousel activeIndex={index} onSelect={handleSelect}>
+            {images.map((slide: any, i: number) => {
+              return (
+                <Carousel.Item key={i}>
+                  <div className="st" style={{}}>
+                    <img
+                      style={{
+                        display: "block",
+                        objectFit: "cover",
+                        maxWidth: "100%",
+                        maxHeight: "500px",
+                        objectPosition: "center",
+                        borderRadius: "16px",
+                      }}
+                      className="d-block w-100 "
+                      src={`${slide?.url}`}
+                      alt="Image One"
+                    />
+                  </div>
+                </Carousel.Item>
+              );
+            })}
+          </Carousel>
         </div>
       </>
     </div>

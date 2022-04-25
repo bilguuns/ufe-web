@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PodcastCardStyle = styled.div`
+export const PoolcastCardStyle = styled.div`
   section {
     padding: 60px 0;
     overflow: hidden;
@@ -110,8 +110,7 @@ export const PodcastCardStyle = styled.div`
     margin: 0;
     position: absolute;
     top: 50%;
-    right: 40%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;

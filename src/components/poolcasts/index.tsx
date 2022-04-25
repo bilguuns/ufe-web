@@ -30,7 +30,7 @@ const Poolcast = ({}: any) => {
                 return (
                   <>
                     {index < 3 && (
-                      <div key={item.id} className=" col-md-4">
+                      <div key={item.id} className="col-md-4">
                         <PoolcastCard item={item} />
                       </div>
                     )}

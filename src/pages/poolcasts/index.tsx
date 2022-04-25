@@ -3,22 +3,22 @@ import { createContext, useState } from "react";
 
 import AppCard from "components/common/card";
 import { IntroSWR } from "lib/api/intro";
-import { CardStyle } from "components/common/card/style";
+import { VideoStyle } from "components/common/card/style";
 import { poolcastsData } from "../../../public/poolcastsData";
 import Poolcast from "components/poolcasts";
 import PoolcastCard from "components/common/poolcast-card";
 
 const Poolcasts = () => {
   return (
-    <CardStyle>
-      <section id="card_list" className="card_list section-bg">
+    <VideoStyle>
+      <section id="video_list" className="video_list section-bg">
         <div className="container">
           <div className="col-md-12">
             <div className={"row"}>
               {poolcastsData?.map((item: any, index: any) => {
                 return (
                   <>
-                    <div key={item.id} className=" col-md-4">
+                    <div key={item.id} className="col-md-4">
                       <PoolcastCard item={item} />
                     </div>
                   </>
@@ -28,7 +28,7 @@ const Poolcasts = () => {
           </div>
         </div>
       </section>
-    </CardStyle>
+    </VideoStyle>
   );
 };
 export default Poolcasts;

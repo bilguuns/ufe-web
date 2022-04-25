@@ -110,8 +110,7 @@ export const VideoStyle = styled.div`
     margin: 0;
     position: absolute;
     top: 50%;
-    right: 40%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;

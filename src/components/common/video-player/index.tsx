@@ -1,5 +1,5 @@
 import React from "react";
-import { Player, ControlBar, ReplayControl } from "video-react";
+import { Player, ControlBar, BigPlayButton } from "video-react";
 import "video-react/dist/video-react.css";
 import { HeroStyle } from "./style";
 
@@ -13,6 +13,7 @@ const VideoPlayer = () => {
               <Player autoPlay loop muted startTime>
                 <source src="/videos/Сургууль хурдан.mp4" type="video/mp4" />
                 <ControlBar disableCompletely={true} />
+                <BigPlayButton disableCompletely={true} />
               </Player>
             </div>
             <div className="container h-100">
@@ -21,10 +22,18 @@ const VideoPlayer = () => {
                   className="w-100 text-white"
                   style={{ marginBottom: "200px" }}
                 >
-                  <h1 className="display-3">
+                  <h1
+                    className="display-3 text-start fw-bold"
+                    style={{ color: "#FFFFFF", fontSize: "4vw" }}
+                  >
                     Санхүү эдийн засгийн их сургууль
                   </h1>
-                  <p className="lead mb-0">Эрхэм баян эрдэм</p>
+                  <p
+                    className="lead mb-0"
+                    style={{ color: "#FFFFFF", fontSize: "2vw" }}
+                  >
+                    Эрхэм баян эрдэм
+                  </p>
                 </div>
               </div>
             </div>

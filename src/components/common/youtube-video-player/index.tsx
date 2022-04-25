@@ -24,9 +24,9 @@ export default function YoutubeVideo() {
               <h1>UFE Улаансарнай</h1>
             </div>
             <div className="col-lg">
-              <div className="more-button">
+              {/* <div className="more-button">
                 <MoreButton />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

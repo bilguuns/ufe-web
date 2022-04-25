@@ -148,7 +148,9 @@ const MainNav = ({ navOpen, setNavOpen, navIsAnimating, closeNav }: any) => {
                                     }
                                   }}
                                 >
-                                  <h1>{menuItem.menu.translates[0].name}</h1>
+                                  <h1 style={{ fontSize: "2vw" }}>
+                                    {menuItem.menu.translates[0].name}
+                                  </h1>
                                 </a>
                               </Link>
                             </li>
@@ -190,7 +192,10 @@ const MainNav = ({ navOpen, setNavOpen, navIsAnimating, closeNav }: any) => {
                                     }
                                   }}
                                 >
-                                  <h5 className="d-flex">
+                                  <h5
+                                    style={{ fontSize: "2vw" }}
+                                    className="d-flex"
+                                  >
                                     {menuItem.menu.translates[0].name}
                                     {menuItem.hasChild ? (
                                       <div className="ms-2">&gt;</div>

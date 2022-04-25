@@ -1,10 +1,10 @@
-import { PodcastCardStyle } from "./style";
+import { PoolcastCardStyle } from "./style";
 
 const PoolcastCard = (props: any) => {
   const { item } = props;
 
   return (
-    <PodcastCardStyle>
+    <PoolcastCardStyle>
       <div className="card" style={{ width: "100%", borderRadius: "16px" }}>
         <img
           className="card-img-top"
@@ -12,7 +12,7 @@ const PoolcastCard = (props: any) => {
           alt="image-alt-text"
           style={{ borderRadius: "16px 16px 0 0" }}
         />
-        <div className="card-img-overlay d-flex  flex-wrap align-items-end">
+        <div className="card-img-overlay d-flex flex-wrap align-items-end">
           <div className="overlay-content">
             <div>
               <a target={item?.url} href={item?.url}>
@@ -24,29 +24,47 @@ const PoolcastCard = (props: any) => {
               </a>
             </div>
 
-            <button
-              className="btn btn-primary "
+            <span
+              className="badge bg-primary "
               style={{
-                marginBottom: "4px",
+                marginBottom: "5px",
                 borderRadius: "6px",
               }}
             >
-              {item?.title}
-            </button>
+              <p
+                className="text-center text-white "
+                style={{
+                  marginTop: "16px",
+                  color: "#FFFFFF",
+                  fontWeight: "400",
+                }}
+              >
+                {item?.title}
+              </p>
+            </span>
             <br />
-            <button
-              className="btn btn-warning"
+            <span
+              className="badge bg-warning "
               style={{
                 borderRadius: "6px",
               }}
             >
-              {item?.name}
-            </button>
+              <p
+                className="text-center  text-dark"
+                style={{
+                  marginTop: "16px",
+                  color: "#FFFFFF",
+                  fontWeight: "400",
+                }}
+              >
+                {item?.name}
+              </p>
+            </span>
             {/* </h6> */}
           </div>
         </div>
       </div>
-    </PodcastCardStyle>
+    </PoolcastCardStyle>
   );
 };
 

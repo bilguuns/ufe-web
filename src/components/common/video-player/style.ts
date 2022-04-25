@@ -77,4 +77,14 @@ export const HeroStyle = styled.div`
     padding: 5px 15px;
     text-align: center;
   }
+  .overlay {
+    width: 100%;
+    z-index: 5;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 14%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
 `;

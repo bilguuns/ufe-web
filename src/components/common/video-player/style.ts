@@ -45,14 +45,28 @@ export const HeroStyle = styled.div`
     z-index: 2;
   }
 
+  .box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+
   header .overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.5;
-    z-index: 1;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(255, 255, 255, 1) 90%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    z-index: 9;
   }
   .h2 {
     margin-top: 30vh;

@@ -37,8 +37,7 @@ const Slider = (props: any) => {
                         display: "block",
                         objectFit: "cover",
                         maxWidth: "100%",
-                        maxHeight: "500px",
-                        objectPosition: "center",
+                        objectPosition: "center center",
                         borderRadius: "16px",
                       }}
                       className="d-block w-100 "

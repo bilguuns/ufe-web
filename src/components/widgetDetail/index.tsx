@@ -31,7 +31,9 @@ export const WidgetDetailId = (props: any) => {
                     display: "block",
                     objectFit: "cover",
                     borderRadius: "16px",
-                    maxHeight: "600px",
+                    maxWidth: "100%",
+
+                    objectPosition: "center center",
                   }}
                   src={`${imgSrc}`}
                   width="100%"

@@ -65,11 +65,7 @@ export const VideoStyle = styled.div`
   .news-description {
     padding-top: 70px;
   }
-  .small-news p {
-    font-weight: 500;
-    font-size: 20px;
-    font-style: Montserrat;
-  }
+
   .more-button {
     text-align: right;
   }

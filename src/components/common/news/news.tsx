@@ -1,7 +1,5 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import React from "react";
-import CustomButton from "../custom-button";
 import DateCard from "../date-card";
 
 export const AppNewsBig = (props: any) => {

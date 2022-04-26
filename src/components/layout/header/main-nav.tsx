@@ -197,7 +197,7 @@ const MainNav = ({ navOpen, setNavOpen, navIsAnimating, closeNav }: any) => {
                                   }}
                                 >
                                   <h5
-                                    style={{ fontSize: "2vw" }}
+                                    style={{ fontSize: "1vw" }}
                                     className="d-flex"
                                   >
                                     {menuItem.menu.translates[0].name}

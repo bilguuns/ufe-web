@@ -44,7 +44,7 @@ export const WidgetDetailId = (props: any) => {
             </div>
 
             <DateCard newsDate={pageData?.Posts[0].timePublished.date} />
-
+            <br />
             {pageData.Posts[0].modes.map((postMode: any, index: number) => {
               return (
                 <>

@@ -155,6 +155,14 @@ const MainHeader = () => {
                 UFE app
               </a>
             </p>
+            <p className="p-5">
+              <a
+                href="https://www.ufe.edu.mn/sezis-virtual-tour/index.htm"
+                target="https://www.ufe.edu.mn/sezis-virtual-tour/index.htm"
+              >
+                UFE 360
+              </a>
+            </p>
           </div>
         </div>
       </div>

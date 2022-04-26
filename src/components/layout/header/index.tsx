@@ -143,7 +143,10 @@ const MainHeader = () => {
               </a>
             </p>
             <p className="p-5">
-              <a href="" target="">
+              <a
+                href="https://online.ufe.edu.mn/login/index.php"
+                target="https://online.ufe.edu.mn/login/index.php"
+              >
                 online.edu.mn
               </a>
             </p>

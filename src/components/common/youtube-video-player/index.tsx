@@ -3,18 +3,6 @@ import MoreButton from "../more-button";
 import { VideoStyle } from "./style";
 
 export default function YoutubeVideo() {
-  const videoOptions = {
-    height: "650px",
-    width: "100%",
-    playerVars: {
-      autoplay: 0,
-      controls: 0,
-      rel: 0,
-      showinfo: 0,
-      mute: 1,
-      loop: 1,
-    },
-  };
   return (
     <VideoStyle>
       <section id="video_list" className="video_list section">
@@ -33,7 +21,17 @@ export default function YoutubeVideo() {
           </div>
         </div>
         <div className="container">
-          <YouTube videoId="TGt6ne31uL8" opts={videoOptions} />
+          <div className="video-responsive">
+            <iframe
+              width="853"
+              height="480"
+              src={`https://www.youtube.com/embed/TGt6ne31uL8`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title="Embedded youtube"
+            />
+          </div>
         </div>
       </section>
     </VideoStyle>

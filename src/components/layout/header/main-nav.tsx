@@ -201,6 +201,7 @@ const MainNav = ({ navOpen, setNavOpen, navIsAnimating, closeNav }: any) => {
                                     className="d-flex"
                                   >
                                     {menuItem.menu.translates[0].name}
+
                                     {menuItem.hasChild ? (
                                       <div className="ms-2">&gt;</div>
                                     ) : (

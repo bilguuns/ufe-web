@@ -14,9 +14,6 @@ $theme-colors: (
 
 body {
   background-color: #efefef;
-  padding: 0;
-  margin: 0;
-    overflow-x: hidden;
 font-family: 'Montserrat', sans-serif;}
 
 a {
@@ -31,6 +28,19 @@ font-size: 40px;
 line-height: 54px;
 
 }
+
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+
+  .section-bg {
+    background-color: #f9f9fa;
+  }
+
+  .header-container {
+    margin-bottom: 30px;
+  }
 
 
 // employee style/////

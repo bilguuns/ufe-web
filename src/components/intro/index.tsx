@@ -3,10 +3,9 @@ import IntroCard from "./card";
 import PostDetail from "components/post/detail";
 import EmployeeModule from "components/module/employee";
 import RegisterButton from "components/common/register-button";
+import HtmlComponent from "components/common/html-component";
 
 const Intro = ({ introData }: any) => {
-  console.log(introData, "introDataintroDataintroData");
-
   const intros =
     introData.childIntros.length > 0 ? introData.childIntros : introData.intros;
   const introPost =
@@ -34,7 +33,6 @@ const Intro = ({ introData }: any) => {
           </div>
         </div>
       )}
-
       {introPost && <PostDetail postData={introPost} introData={intros[0]} />}
     </div>
   );

@@ -3,9 +3,10 @@ import PageHeader from "components/layout/page/page-header";
 import Module from "components/module/index";
 import IntroPage from "components/intro/index";
 import EmployeeModule from "components/module/employee";
+import HtmlComponent from "components/common/html-component";
 
 const MenuIntroDetail = ({ m_id, m_slug, pageData, introData, iId }: any) => {
-  console.log("idididiidid", iId);
+  console.log("HtmlComponentHtmlComponentHtmlComponentHtmlComponent", iId);
 
   return (
     <>

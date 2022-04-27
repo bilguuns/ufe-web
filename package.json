@@ -32,6 +32,7 @@
     "react-hero-carousel": "^1.2.1",
     "react-html-parser": "^2.0.2",
     "react-icons": "^4.3.1",
+    "react-iframe": "^1.8.0",
     "react-indiana-drag-scroll": "^2.1.0",
     "react-moment": "^1.1.2",
     "react-player": "^2.10.0",

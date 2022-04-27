@@ -19,7 +19,7 @@ const Poolcast = ({}: any) => {
 
             <div className="col-lg">
               <div className="more-button">
-                <MoreButton />
+                <MoreButton uri="poolcasts" />
               </div>
             </div>
           </div>

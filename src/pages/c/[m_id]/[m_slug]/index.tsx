@@ -6,6 +6,7 @@ import Module from "components/module/index";
 import IntroPage from "components/intro/index";
 import { MenuSWR } from "../../../../lib/api/menu";
 import { useEffect, useState } from "react";
+import HtmlComponent from "components/common/html-component";
 
 const MenuDetail = ({ props, m_id, m_slug, module, pageData }: any) => {
   const { query } = useRouter();
@@ -17,6 +18,7 @@ const MenuDetail = ({ props, m_id, m_slug, module, pageData }: any) => {
 
       <hr />
 
+      {pageData.menu.moduleName === "360" && <HtmlComponent />}
       {pageData.menu.contentType === "intro" && (
         <IntroPage introData={pageData} />
       )}

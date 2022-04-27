@@ -114,7 +114,10 @@ const MainHeader = () => {
               </a>
             </p>
             <p className="p-5">
-              <a href="http://online.edu.mn/" target="http://online.edu.mn/">
+              <a
+                href="https://online.ufe.edu.mn/login/index.php"
+                target="https://online.ufe.edu.mn/login/index.php"
+              >
                 Moodle
               </a>
             </p>
@@ -127,12 +130,9 @@ const MainHeader = () => {
               </a>
             </p>
             <p className="p-5">
-              <a
-                href="https://www.youtube.com/channel/UCbGN_p4WyN_XcgDNUD3dhzQ"
-                target="https://www.youtube.com/channel/UCbGN_p4WyN_XcgDNUD3dhzQ"
-              >
-                Podcast
-              </a>
+              <Link href="poolcasts">
+                <a>Podcast</a>
+              </Link>
             </p>
             <p className="p-5">
               <a
@@ -143,24 +143,8 @@ const MainHeader = () => {
               </a>
             </p>
             <p className="p-5">
-              <a
-                href="https://online.ufe.edu.mn/login/index.php"
-                target="https://online.ufe.edu.mn/login/index.php"
-              >
+              <a href="http://online.edu.mn/" target="http://online.edu.mn/">
                 online.edu.mn
-              </a>
-            </p>
-            <p className="p-5">
-              <a href="" target="">
-                UFE app
-              </a>
-            </p>
-            <p className="p-5">
-              <a
-                href="https://www.ufe.edu.mn/sezis-virtual-tour/index.htm"
-                target="https://www.ufe.edu.mn/sezis-virtual-tour/index.htm"
-              >
-                UFE 360
               </a>
             </p>
           </div>
